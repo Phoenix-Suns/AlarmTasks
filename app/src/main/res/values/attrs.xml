@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CollapsingImageBehavior">
+        <attr name="collapsedTarget" format="integer"></attr>
+    </declare-styleable>
+
+    <!--region Theme Color-->
+    <attr name="colorBackground" format="reference|color"/>
+    <attr name="sourceImageBackground" format="reference|integer"/>
+    <attr name="colorImageBackground" format="reference|color"/>
+    <attr name="sourceImageBackgroundLarge" format="reference|integer"/>
+    <attr name="colorToolbarBackground" format="reference|color"/>
+    <!--endregion-->
+
+</resources>

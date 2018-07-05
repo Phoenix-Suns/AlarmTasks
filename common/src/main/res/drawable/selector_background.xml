@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--bình thường-->
+    <item android:state_pressed="false" android:state_enabled="true" android:drawable="@null"/>
+
+    <!--kích hoạt-->
+    <item android:state_pressed="true"  android:drawable="@color/Common.control_highlight_background" />
+    <item android:state_focused="true" android:drawable="@color/Common.control_highlight_background" />
+    <item android:state_hovered="true"  android:drawable="@color/Common.control_highlight_background" />
+
+    <item android:state_selected="true" android:drawable="@color/Common.control_highlight_background" />
+    <item android:state_activated="true" android:drawable="@color/Common.control_highlight_background" />
+
+    <!--enable false-->
+    <item android:state_enabled="false" android:drawable="@color/Common.control_highlight_background" />
+
+
+</selector>

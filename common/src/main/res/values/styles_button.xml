@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Nút in hoa, in đậm, phẳng-->
+    <style name="Common.button" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@color/Common.text_primary.light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--Menu Button-->
+    <style name="Common.menu_button">
+        <item name="android:drawablePadding">@dimen/Common.listSmallItem_icon_paddingRight</item>
+
+        <item name="android:textViewStyle">@style/Common.text_caption.light</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/selector_text_color</item>
+        <item name="android:background">@drawable/selector_background</item>
+        <item name="android:gravity">start|fill_vertical</item>
+        <item name="android:paddingTop">@dimen/Common.form_paddingTop</item>
+        <item name="android:paddingBottom">@dimen/Common.form_paddingBottom</item>
+        <item name="android:paddingRight">@dimen/Common.spacing_large</item>
+        <item name="android:paddingLeft">@dimen/Common.spacing_large</item>
+
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+</resources>

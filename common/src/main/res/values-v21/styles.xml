@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Common.theme" parent="Common.theme.base">
+        <!--<item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>-->
+
+        <!-- Sử dụng API v21 Properties -->
+        <item name="android:colorPrimary">@color/Common.primary</item>
+        <item name="android:colorPrimaryDark">@color/Common.primary</item>
+        <item name="android:windowBackground">@color/Common.background</item>
+        <item name="android:navigationBarColor">@color/Common.navigation_bar</item>
+        <item name="android:colorAccent">@color/Common.accent</item>
+
+        <item name="android:colorBackground">@color/Common.background</item>
+        <item name="android:colorForeground">@color/Common.foreground</item>
+        <item name="android:textColorPrimaryInverse">@color/Common.text_primary.dark</item>
+        <!-- Status Bar trong suốt, không có height -->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    </style>
+</resources>

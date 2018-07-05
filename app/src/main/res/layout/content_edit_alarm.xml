@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_Period"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_morning" />
+
+    <TextView
+        android:id="@+id/textView_Distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/app_text_secondary.light"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/textView_Time"
+        android:textSize="@dimen/app_text_medium"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <TextView
+        android:id="@+id/textView_Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        app:layout_constraintTop_toTopOf="@+id/imageView_Period"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_Period"
+        style="@style/time_big"/>
+
+    <EditText
+        android:id="@+id/editText_AlarmName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/action_alarm_name"
+        android:singleLine="false"
+        android:textSize="@dimen/app_text_large"
+        android:background="@null"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintBottom_toBottomOf="@id/imageView_Period"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/Common.spacing_medium"/>
+
+
+    <!--Day of Week-->
+    <TableLayout
+        android:id="@+id/table_Day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorToolbarBackground"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        app:layout_constraintTop_toBottomOf="@id/imageView_Period">
+
+        <TableRow>
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatMonday"
+                style="@style/EditItem.Alarm.RepeatDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/action_monday"
+                android:textOn="@string/action_monday" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatTuesday"
+                style="@style/EditItem.Alarm.RepeatDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/action_tuesday"
+                android:textOn="@string/action_tuesday" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatWednesday"
+                style="@style/EditItem.Alarm.RepeatDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/action_wednesday"
+                android:textOn="@string/action_wednesday" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatThursday"
+                style="@style/EditItem.Alarm.RepeatDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/action_thursday"
+                android:textOn="@string/action_thursday" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatFriday"
+                style="@style/EditItem.Alarm.RepeatDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/action_friday"
+                android:textOn="@string/action_friday" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatSaturday"
+                style="@style/EditItem.Alarm.RepeatDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/action_saturday"
+                android:textOn="@string/action_saturday" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatSunday"
+                style="@style/EditItem.Alarm.RepeatDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/action_sunday"
+                android:textOn="@string/action_sunday" />
+
+        </TableRow>
+    </TableLayout>
+
+
+    <!--Sound-->
+    <LinearLayout
+        android:id="@+id/container_Tone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_touch_selector"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/table_Day">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sound_fix"/>
+
+        <TextView
+            android:id="@+id/textView_ToneSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_bold"
+            android:text="@string/action_alarm_tone_default"
+            android:textSize="@dimen/app_text_medium"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingLeft="@dimen/Common.spacing_large"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ToolBar -->
+    <style name="common_toolbar" parent="">
+        <!--màu chữ title-->
+        <item name="android:textColorPrimary">@color/Common.text_accent.light</item>
+        <!-- màu Menu Icon -->
+        <item name="android:textColorSecondary">@color/Common.text_accent.light</item>
+
+        <!-- Support library compatibility -->
+        <item name="android:background">?attr/colorPrimary</item>
+        <!--<item name="backgroundStacked"></item>
+        <item name="backgroundSplit"></item>-->
+    </style>
+
+</resources>

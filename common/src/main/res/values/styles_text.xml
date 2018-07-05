@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Chữ lớn, khẩu hiệu, gây chú ý mạnh-->
+    <!--Header xxxx large-->
+    <style name="Common.text_display_4">
+        <item name="android:textSize">@dimen/Common.text_display_4</item>
+        <item name="android:textColor">@color/Common.text_secondary.dark</item>
+    </style>
+
+    <!--Header xxx large-->
+    <style name="Common.text_display_3">
+        <item name="android:textSize">@dimen/Common.text_display_3</item>
+        <item name="android:textColor">@color/Common.text_secondary.dark</item>
+    </style>
+
+    <!--Header xx large-->
+    <style name="Common.text_display_2">
+        <item name="android:textSize">@dimen/Common.text_display_2</item>
+        <item name="android:textColor">@color/Common.text_secondary.dark</item>
+    </style>
+
+    <!--Header x large-->
+    <style name="Common.text_display_1">
+        <item name="android:textSize">@dimen/Common.text_display_1</item>
+        <item name="android:textColor">@color/Common.text_secondary.dark</item>
+    </style>
+
+    <!--dùng Đầu Trang, đầu Activity (ActionBar) -->
+    <style name="Common.text_headline">
+        <item name="android:textSize">@dimen/Common.text_headline</item>
+        <item name="android:textColor">@color/Common.text_primary.dark</item>
+    </style>
+
+    <!--Tiêu đề nhỏ - Nổi bật mỗi dòng - nội dung chính (ListView) -->
+    <style name="Common.text_title">
+        <item name="android:textSize">@dimen/Common.text_title</item>
+        <item name="android:textColor">@color/Common.text_primary.dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Header nhỏ, phân cách nhóm Item (List Item)-->
+    <style name="Common.text_subhead">
+        <item name="android:textSize">@dimen/Common.text_body</item>
+        <item name="android:textColor">@color/Common.text_primary.dark</item>
+    </style>
+
+    <!--Chữ chính-->
+    <style name="Common.text_body">
+        <item name="android:textSize">@dimen/Common.text_body</item>
+        <item name="android:textColor">@color/Common.text_primary.dark</item>
+    </style>
+
+    <!--Chữ chính - In đậm-->
+    <style name="Common.text_body_bold">
+        <item name="android:textSize">@dimen/Common.text_body</item>
+        <item name="android:textColor">@color/Common.text_primary.dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Chữ phụ nhỏ, dùng dưới footer(dấu trang) -->
+    <style name="Common.text_caption">
+        <item name="android:textSize">@dimen/Common.text_caption</item>
+        <item name="android:textColor">@color/Common.text_secondary.dark</item>
+    </style>
+
+    <!--Chữ của nút-->
+    <style name="Common.text_button">
+        <item name="android:textSize">@dimen/Common.text_button</item>
+        <item name="android:textColor">@color/Common.text_primary.dark</item>
+    </style>
+
+
+    <!--region light theme-->
+    <!--Header xxxx large-->
+    <style name="Common.text_display_4.light" parent="Common.text_display_4">
+        <item name="android:textColor">@color/Common.text_secondary.light</item>
+    </style>
+
+    <!--Header xxx large-->
+    <style name="Common.text_display_3.light" parent="Common.text_display_3">
+        <item name="android:textColor">@color/Common.text_secondary.light</item>
+    </style>
+
+    <!--Header xx large-->
+    <style name="Common.text_display_2.light" parent="Common.text_display_2">
+        <item name="android:textColor">@color/Common.text_secondary.light</item>
+    </style>
+
+    <!--Header x large-->
+    <style name="Common.text_display_1.light" parent="Common.text_display_1">
+        <item name="android:textColor">@color/Common.text_secondary.light</item>
+    </style>
+
+    <!--dùng Đầu Trang, đầu Activity (ActionBar) -->
+    <style name="Common.text_headline.light" parent="Common.text_headline">
+        <item name="android:textColor">@color/Common.text_primary.light</item>
+    </style>
+
+    <!--Tiêu đề nhỏ - Nổi bật mỗi dòng - nội dung chính (ListView) -->
+    <style name="Common.text_title.light" parent="Common.text_title">
+        <item name="android:textColor">@color/Common.text_primary.light</item>
+    </style>
+
+    <!--Header nhỏ, phân cách nhóm Item (List Item)-->
+    <style name="Common.text_subhead.light" parent="Common.text_subhead">
+        <item name="android:textColor">@color/Common.text_primary.light</item>
+    </style>
+
+    <!--Chữ chính-->
+    <style name="Common.text_body.light" parent="Common.text_body">
+        <item name="android:textColor">@color/Common.text_primary.light</item>
+    </style>
+
+    <!--Chữ chính - In đậm-->
+    <style name="Common.text_body_bold.light" parent="Common.text_body_bold">
+        <item name="android:textColor">@color/Common.text_primary.light</item>
+    </style>
+
+    <!--Chữ phụ nhỏ, dùng dưới footer(dấu trang) -->
+    <style name="Common.text_caption.light" parent="Common.text_caption">
+        <item name="android:textColor">@color/Common.text_secondary.light</item>
+    </style>
+
+    <!--Chữ của nút-->
+    <style name="Common.text_button.light" parent="Common.text_button">
+        <item name="android:textColor">@color/Common.text_primary.light</item>
+    </style>
+    <!--endregion-->
+
+</resources>

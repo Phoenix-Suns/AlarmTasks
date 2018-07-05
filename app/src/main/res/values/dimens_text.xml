@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_text_xsmall">11sp</dimen>
+    <dimen name="app_text_small">14sp</dimen>
+    <dimen name="app_text_medium">20sp</dimen>
+    <dimen name="app_text_large">28sp</dimen>
+    <dimen name="app_text_xlarge">36sp</dimen>
+    <dimen name="app_text_xxlarge">48sp</dimen>
+
+    <!--Chữ lớn, khẩu hiệu, gây chú ý mạnh-->
+    <!--Header xxxx large-->
+    <dimen name="app_text_display_4">112sp</dimen>
+    <!--Header xxx large-->
+    <dimen name="app_text_display_3">56sp</dimen>
+    <!--Header xx large-->
+    <dimen name="app_text_display_2">45sp</dimen>
+    <!--Header x large-->
+    <dimen name="app_text_display_1">34sp</dimen>
+
+    <!--dùng Đầu Trang, đầu Activity (ActionBar) -->
+    <dimen name="app_text_headline">24sp</dimen>
+    <!--Tiêu đề nhỏ - Nổi bật mỗi dòng - nội dung chính (ListView) -->
+    <dimen name="app_text_title">21sp</dimen>
+    <!--Header nhỏ, phân cách nhóm Item (List Item)-->
+    <dimen name="app_text_subhead">17sp</dimen>
+
+    <!--Chữ chính-->
+    <dimen name="app_text_body">15sp</dimen>
+
+    <!--Chữ phụ nhỏ, dùng dưới footer(dấu trang) - Ghi chú - hint -->
+    <dimen name="app_text_caption">13sp</dimen>
+
+    <!--Chữ của nút-->
+    <dimen name="app_text_button">15sp</dimen>
+
+</resources>

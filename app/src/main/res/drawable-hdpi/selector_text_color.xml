@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Tab header Selector-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/Common.text_secondary.dark" android:state_pressed="false" android:state_selected="false" />
+    <item android:color="@color/Common.text_primary.dark" android:state_pressed="false" android:state_selected="true" />
+    <item android:color="@color/Common.text_primary.dark" android:state_pressed="true" />
+</selector>

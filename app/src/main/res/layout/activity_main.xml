@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.windyroad.nghia.alarmtasks.views.MainActivity"
+    android:background="?attr/colorBackground">
+
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:background="?attr/colorImageBackground">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar"
+            app:titleEnabled="false">
+
+            <!--Background-->
+            <ImageView
+                android:id="@+id/imageView_Period"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                app:collapsedTarget="@+id/toolbar"
+                app:layout_behavior="com.windyroad.nghia.common.view.CollapsingImageBehavior"
+                app:layout_collapseMode="parallax"
+                app:srcCompat="?attr/sourceImageBackground" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:theme="@style/ToolBarStyle"
+                app:layout_collapseMode="pin">
+            </android.support.v7.widget.Toolbar>
+
+            <!--Big Time-->
+            <TextView
+                android:id="@+id/textView_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/time_big"
+                android:text="@string/message_time_default"
+                android:layout_gravity="center"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <!--Tab header
+        app:tabMode="scrollable"-->
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:layout_anchor="@+id/include"-->
+        <!--app:layout_anchorGravity="right|bottom"-->
+        <!--app:srcCompat="@drawable/ic_add_alarm_white_24dp" />-->
+
+</android.support.design.widget.CoordinatorLayout>
+

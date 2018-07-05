@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Màu chữ - Theme Dark-->
+    <color name="app_text_base">#FFF</color><!--100%-->
+    <!-- Màu chữ chính-->
+    <color name="app_text_primary">#FFFFFFFF</color><!--100%-->
+    <!-- Màu chữ phụ/ Icon - Không cần nổi bật-->
+    <color name="app_text_secondary">#B3FFFFFF</color><!--70%-->
+    <!--Màu chữ Disable/ Hint-->
+    <color name="app_text_hint_disabled">#4DFFFFFF</color><!--30%-->
+    <!--Màu chữ chia cắt - Phần chia của List Item-->
+    <color name="app_text_dividers">#1FFFFFFF</color><!--12%-->
+    <!--Màu Chữ nghịch đảo - dùng cho ColorPrimary là nền-->
+    <color name="app_text_accent">#000</color>
+
+    <!--Màu chữ - Theme Light-->
+    <color name="app_text_base.light">#000000</color><!--100%-->
+    <!-- Màu chữ chính-->
+    <color name="app_text_primary.light">#DE000000</color><!--87%-->
+    <!-- Màu chữ phụ/ Icon - Không cần nổi bật-->
+    <color name="app_text_secondary.light">#8A000000</color><!--54%-->
+    <!--Màu chữ Disable/ Hint-->
+    <color name="app_text_hint_disabled.light">#61000000</color><!--38%-->
+    <!--Màu chữ chia cắt - Phần chia của List Item-->
+    <color name="app_text_dividers.light">#1F000000</color><!--12%-->
+    <!--Màu Chữ nghịch đảo - dùng cho ColorPrimary là nền-->
+    <color name="app_text_accent.light">#FFF</color>
+
+</resources>

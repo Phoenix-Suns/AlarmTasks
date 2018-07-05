@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorImageBackground">
+
+    <ImageView
+        android:id="@+id/imageView_Period"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="?attr/sourceImageBackgroundLarge"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:tint="?attr/colorBackground"
+        app:srcCompat="@drawable/bg_task_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/button_Dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dismiss"
+        android:textColor="@color/Common.text_primary.dark"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Time" />
+
+    <TextView
+        android:id="@+id/textView_Task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarm name"
+        android:textAlignment="center"
+        android:textColor="@color/app_text_secondary.light" />
+
+    <TextView
+        android:id="@+id/textView_Time"
+        style="@style/time_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_Period"
+        app:layout_constraintTop_toTopOf="@+id/imageView_Period" />
+
+    <TextView
+        android:id="@+id/textView_Tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Common.spacing_medium"
+        android:text="@string/message_select_task_tip"
+        android:textAlignment="center"
+        android:textColor="@color/Common.text_secondary.light"
+        app:layout_constraintBottom_toTopOf="@id/listView_Tasks" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listView_Tasks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#64ffffff"
+        app:layout_constraintTop_toBottomOf="@id/imageView_Period"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

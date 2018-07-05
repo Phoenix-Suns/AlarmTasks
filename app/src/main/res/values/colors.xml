@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--MÀU CHỮ [00][000000] = [ALPHA][RGB]-->
+    <!-- Tham khảo: https://www.google.com/design/spec/style/color.html#color-color-palette -->
+
+    <!-- Màu chính (Thường là: 500) -->
+    <color name="app_primary">#3fbdd4</color>
+    <!-- Màu tối, thường dùng cho thanh Status (pin, time) -->
+    <!-- +200 so với màu chính (Thường là: 700) -->
+    <color name="app_primary_dark">#319ead</color>
+
+    <!-- màu thành điều hướng (Home, back) (900) -->
+    <color name="app_navigationBar">#287e89</color>
+
+    <!-- màu nhấn (nổi bật), (dùng cho nút) --><!--500: nghịch màu-->
+    <color name="app_accent">#ec1654</color>
+    <!--viền nút-->
+    <color name="app_accent_bright">#FF5200</color>
+
+    <!-- màu nền -->
+    <color name="app_background">#F9F9F9</color>
+
+    <color name="app_foreground">#000</color>
+
+    <!--Màu background control chọn-->
+    <color name="app_control_highlight_background">#20000000</color>
+
+    <!--700: nghịch màu-->
+    <color name="app_control_activated">#f57c00</color>
+    <!--Control rỗng, chưa có dữ liệu-->
+    <color name="app_control_none">#EEE</color>
+
+    <!--màu dải phân cách, chia ra-->
+    <color name="app_dividers">#e4e4e4</color>
+
+
+
+    <color name="green">#4CAF50</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange">#FF9800</color>
+    <color name="red">#F44336</color>
+    <color name="purple">#9C27B0</color>
+    <color name="teal">#009688</color>
+    <color name="brown">#795548</color>
+    <color name="blue_grey">#607D8B</color>
+
+    <color name="app_tint_background">#bbffffff</color>
+
+
+    <color name="app_bg_image_morning">#90d6f5</color>
+    <color name="app_bg_image_afternoon">#feeb5e</color>
+    <color name="app_bg_image_evening">#f69e5c</color>
+    <color name="app_bg_image_night">#3a6a89</color>
+    <color name="app_bg_image_midnight">#6052b5</color>
+
+    <color name="app_bg_morning">#6490d6f5</color>
+    <color name="app_bg_afternoon">#64feeb5e</color>
+    <color name="app_bg_evening">#64f69e5c</color>
+    <color name="app_bg_night">#643a6a89</color>
+    <color name="app_bg_midnight">#646052b5</color>
+
+    <color name="app_bg_toolbar_morning">#3099c7</color>
+    <color name="app_bg_toolbar_afternoon">#d6c11f</color>
+    <color name="app_bg_toolbar_evening">#c86419</color>
+    <color name="app_bg_toolbar_night">#05578d</color>
+    <color name="app_bg_toolbar_midnight">#201754</color>
+
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:height="@dimen/sound_size"
+        android:width="@dimen/sound_size">
+        <bitmap
+            android:src="@drawable/ic_sound" />
+    </item>
+
+</layer-list >

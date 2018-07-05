@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Morning" parent="AppTheme">
+        <item name="colorBackground">@color/app_bg_morning</item>
+        <item name="colorImageBackground">@color/app_bg_image_morning</item>
+        <item name="sourceImageBackground">@drawable/bg_morning_small</item>
+        <item name="sourceImageBackgroundLarge">@drawable/bg_morning</item>
+        <item name="colorToolbarBackground">@color/app_bg_toolbar_morning</item>
+    </style>
+
+
+    <style name="AppTheme.Afternoon" parent="AppTheme">
+        <item name="colorBackground">@color/app_bg_afternoon</item>
+        <item name="colorImageBackground">@color/app_bg_image_afternoon</item>
+        <item name="sourceImageBackground">@drawable/bg_afternoon_small</item>
+        <item name="sourceImageBackgroundLarge">@drawable/bg_afternoon</item>
+        <item name="colorToolbarBackground">@color/app_bg_toolbar_afternoon</item>
+    </style>
+
+
+    <style name="AppTheme.Evening" parent="AppTheme">
+        <item name="colorBackground">@color/app_bg_night</item>
+        <item name="colorImageBackground">@color/app_bg_image_night</item>
+        <item name="sourceImageBackground">@drawable/bg_night_small</item>
+        <item name="sourceImageBackgroundLarge">@drawable/bg_night</item>
+        <item name="colorToolbarBackground">@color/app_bg_toolbar_night</item>
+    </style>
+
+
+    <style name="AppTheme.Night" parent="AppTheme">
+        <item name="colorBackground">@color/app_bg_midnight</item>
+        <item name="colorImageBackground">@color/app_bg_image_midnight</item>
+        <item name="sourceImageBackground">@drawable/bg_midnight_small</item>
+        <item name="sourceImageBackgroundLarge">@drawable/bg_midnight</item>
+        <item name="colorToolbarBackground">@color/app_bg_toolbar_midnight</item>
+    </style>
+
+
+    <style name="AppTheme.Midnight" parent="AppTheme">
+        <item name="colorBackground">@color/app_bg_midnight</item>
+        <item name="colorImageBackground">@color/app_bg_image_midnight</item>
+        <item name="sourceImageBackground">@drawable/bg_midnight</item>
+        <item name="colorToolbarBackground">@color/app_bg_toolbar_midnight</item>
+    </style>
+</resources>

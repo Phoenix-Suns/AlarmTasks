@@ -1,0 +1,54 @@
+<resources>
+
+
+    <!--<string name="hello_world">Hello world!</string>
+
+ <string name="text_image"> ảnh</string>
+
+ &lt;!&ndash;Chuỗi rỗng&ndash;&gt;
+ <string name="empty">...</string>
+ <string name="comma">", "</string>
+
+ <string name="nav_drawer_open">Open</string>
+ <string name="nav_drawer_close">Close</string>
+
+ <string name="title_dialog_gps">Mở GPS</string>
+
+ <string name="title_tab_new_assign">Mới tải</string>
+ <string name="title_tab_doing_assign">Đang làm</string>
+ <string name="title_tab_finish_assign">Hoàn thành</string>
+
+ <string name="title_notify_uploading">Đang Upload dữ liệu</string>
+ <string name="title_notify_upload_finish">Đã đồng bộ thành công</string>
+
+ <string name="message_no_data">Không có dữ liệu.</string>
+ <string name="message_error_unknown">Có lỗi xảy ra.</string>
+ <string name="message_error_plus">Thất bại, lỗi: </string>
+ <string name="message_error_server_plus">Thất bại, lỗi mạng: </string>
+ <string name="message_success">Thành công.</string>
+ <string name="message_cancel">Đã hủy.</string>
+ <string name="message_connection_map_fail">Kết nối " bản đồ thất bại.</string>
+
+ <string name="message_dialog_open_gps">GPS chưa mở, bạn có muốn mở không?</string>
+ <string name="message_dialog_open_network">Mạng kết nối chưa mở, bạn có muốn mở không?</string>
+ <string name="message_not_allow_edit_because_uploaded">Không cho phép sửa. Đã tải lên server</string>
+
+ <string name="error_field_required">Không để trống</string>
+ <string name="error_field_positive_number">Số phải >0</string>
+
+ <string name="error_new_password_equals">Mật khẩu xác nhận phải trùng mật khẩu mới</string>
+ <string name="error_image_type_unselected">Chưa chọn kiểu ảnh</string>
+
+ <string name="prompt_expired_date">"Ngày hết hạn "</string>
+
+ <string name="action_settings">Settings</string>
+ <string name="action_add_assign">Thêm assign</string>
+
+ <string name="title_activity_user_info">Tài khoản</string>
+ <string name="title_activity_list_assign">Phân công</string>-->
+
+    <string name="demo_text">Demo message</string>
+
+    <!-- TODO: Remove or change this placeholmessagetext -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

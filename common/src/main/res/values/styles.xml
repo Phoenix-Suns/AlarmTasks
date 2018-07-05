@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Common" parent="Common.theme.base">
+
+    </style>
+    <style name="Common.theme" parent="Common">
+
+    </style>
+
+    <style name="Common.theme.base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--font mặc định-->
+        <item name="android:typeface">serif</item>
+        <!--Apply All TextView-->
+        <item name="android:textViewStyle">@style/Common.text_body.light</item>
+        <!--<item name="android:buttonStyle">@style/Common.button</item>-->
+        <!--<item name="actionBarTabTextStyle"></item>-->
+        <item name="android:actionBarStyle">@style/common_toolbar</item>
+
+        <!--<item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>-->
+
+        <!-- Sử dụng Appcompat V7 Properties -->
+        <item name="colorPrimary">@color/Common.primary</item>
+        <item name="colorPrimaryDark">@color/Common.primary</item>
+        <item name="colorAccent">@color/Common.accent</item>
+        <item name="colorControlActivated">@color/Common.control_activated</item>
+        <item name="colorControlHighlight">@color/Common.control_highlight_background</item>
+    </style>
+
+    <!--đường cách ngang-->
+    <style name="Common.divider_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/Common.text_dividers.light</item>
+    </style>
+
+    <!--App compat Popup Dim-->
+    <style name="Theme.AppCompat.Dialog.Dim" parent="@style/Theme.AppCompat.Dialog">
+        <!--no action bar-->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--App compat Popup Transparent-->
+    <style name="Theme.AppCompat.Dialog.Transparent" parent="@style/Theme.AppCompat.Dialog">
+        <!--no action bar-->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+</resources>

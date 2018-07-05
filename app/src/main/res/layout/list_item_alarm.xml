@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/selector_row_2">
+
+    <ImageView
+        android:id="@+id/imageView_Period"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_tint_background"
+        android:paddingLeft="@dimen/list_item_horizon_padding"
+        android:paddingRight="@dimen/list_item_horizon_padding"
+        android:paddingTop="@dimen/list_item_vertical_padding"
+        android:paddingBottom="@dimen/list_item_vertical_padding">
+
+        <Switch
+            android:id="@+id/switch_Enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_time_default"
+            android:textSize="@dimen/app_text_display_1"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:padding="0dp"/>
+
+        <TextView
+            android:id="@+id/textView_Distance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/Common.spacing_large"
+            android:fontFamily="@font/roboto_thin"
+            android:paddingBottom="@dimen/Common.spacing_small"
+            android:textColor="@color/app_text_hint_disabled.light"
+            app:layout_constraintBottom_toBottomOf="@id/textView_Time"
+            app:layout_constraintLeft_toRightOf="@id/textView_Time"
+            app:layout_constraintRight_toLeftOf="@id/switch_Enable" />
+
+        <TextView
+            android:id="@+id/textView_Task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/Common.spacing_large"
+            android:text="Title"
+            app:layout_constraintBottom_toTopOf="@+id/textView_Distance"
+            app:layout_constraintLeft_toRightOf="@id/textView_Time"
+            app:layout_constraintRight_toLeftOf="@id/switch_Enable" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/switch_Enable"
+            app:layout_constraintTop_toBottomOf="@id/textView_Time"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/action_monday"
+                android:textOff="@string/action_monday"
+                style="@style/ListItem.Alarm.RepeatDay" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/action_tuesday"
+                android:textOn="@string/action_tuesday"
+                style="@style/ListItem.Alarm.RepeatDay"  />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/action_wednesday"
+                android:textOff="@string/action_wednesday"
+                style="@style/ListItem.Alarm.RepeatDay" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/action_thursday"
+                android:textOff="@string/action_thursday"
+                style="@style/ListItem.Alarm.RepeatDay" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/action_friday"
+                android:textOff="@string/action_friday"
+                style="@style/ListItem.Alarm.RepeatDay" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/action_saturday"
+                android:textOff="@string/action_saturday"
+                style="@style/ListItem.Alarm.RepeatDay" />
+
+            <ToggleButton
+                android:id="@+id/toggle_RepeatSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/action_sunday"
+                android:textOff="@string/action_sunday"
+                style="@style/ListItem.Alarm.RepeatDay"/>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider"/>
+
+</android.support.constraint.ConstraintLayout>

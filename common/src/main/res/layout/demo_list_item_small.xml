@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/Common.listSmallItem_content">
+
+        <ImageView
+            style="@style/Common.listSmallItem_icon"
+            android:src="@android:drawable/ic_menu_call"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            style="@style/Common.listSmallItem_title">
+
+            <TextView
+                style="@style/Common.text_body.light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/Common.listSmallItem_subIcon"
+            android:src="@android:drawable/ic_btn_speak_now"/>
+
+    </LinearLayout>
+
+</LinearLayout>

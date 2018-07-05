@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Tab header Selector-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--normal-->
+    <item android:state_enabled="true" android:color="@color/Common.text_primary.light"  />
+
+    <!--enable-->
+    <item android:state_enabled="false" android:color="@color/Common.control_highlight_background"/>
+
+    <!--active-->
+    <item android:state_focused="true" android:color="@color/Common.accent"/>
+    <item android:state_pressed="true" android:color="@color/Common.accent"/>
+    <item android:state_selected="true" android:color="@color/Common.accent"/>
+    <item android:state_hovered="true" android:color="@color/Common.accent"/>
+    <item android:state_activated="true" android:color="@color/Common.accent"/>
+
+</selector>
