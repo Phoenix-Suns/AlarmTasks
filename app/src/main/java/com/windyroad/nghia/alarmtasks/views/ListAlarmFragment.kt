@@ -9,12 +9,15 @@ import android.support.v4.app.DialogFragment
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.helper.ItemTouchHelper
 import android.view.*
 
 import com.windyroad.nghia.alarmtasks.R
 import com.windyroad.nghia.alarmtasks.adapters.AlarmAdapter
+import com.windyroad.nghia.alarmtasks.data.HistoryData
 import com.windyroad.nghia.alarmtasks.data.MyAlarmData
 import com.windyroad.nghia.alarmtasks.helpers.AlarmHelper
+import com.windyroad.nghia.alarmtasks.helpers.SwipeHelper
 import com.windyroad.nghia.alarmtasks.models.MyAlarm
 import com.windyroad.nghia.common.fragment.YesNoDialogFragment
 
@@ -81,11 +84,7 @@ class ListAlarmFragment : Fragment() {
                 var yesDialog = YesNoDialogFragment.newInstance("Delete", "Do you want delete it?", "Yes", "No")
                 yesDialog.setListener(object : YesNoDialogFragment.IDialogListener {
                     override fun onDialogPositiveClick(dialog: DialogFragment) {
-                        val alarm = MyAlarmData.getById(context!!, alarmId)
-                        MyAlarmData.delete(context!!, alarmId)
-                        AlarmHelper.cancelAlarm(context!!, alarm.id)
-                        AlarmHelper.setAllAlarm(context!!)
-                        refreshListAlarm()
+                        handleDeleteAlarm(alarmId)
                     }
 
                     override fun onDialogNegativeClick(dialog: DialogFragment) {
@@ -109,6 +108,22 @@ class ListAlarmFragment : Fragment() {
         mButton_AddAlarm?.setOnClickListener{view ->
             gotoAddAlarm()
         }
+
+        // Swipe to delete
+        val itemTouchHelper = SwipeHelper(0, ItemTouchHelper.LEFT, object : SwipeHelper.RecyclerItemTouchHelperListener{
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int, position: Int) {
+                handleDeleteAlarm(mListAlarm[position].id)
+            }
+        }, R.id.view_foreground)
+        ItemTouchHelper(itemTouchHelper).attachToRecyclerView(mRecyclerView_ListAlarm)
+    }
+
+    private fun handleDeleteAlarm(alarmId: Long) {
+        val alarm = MyAlarmData.getById(context!!, alarmId)
+        MyAlarmData.delete(context!!, alarmId)
+        AlarmHelper.cancelAlarm(context!!, alarm.id)
+        AlarmHelper.setAllAlarm(context!!)
+        refreshListAlarm()
     }
 
     private fun refreshListAlarm() {

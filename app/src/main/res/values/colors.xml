@@ -20,6 +20,7 @@
 
     <!-- màu nền -->
     <color name="app_background">#F9F9F9</color>
+    <color name="app_background_selector">#bdbdbd</color>
 
     <color name="app_foreground">#000</color>
 
@@ -34,6 +35,8 @@
     <!--màu dải phân cách, chia ra-->
     <color name="app_dividers">#e4e4e4</color>
 
+    <color name="app_delete">#EF5350</color>
+    <color name="app_check">#689f38</color>
 
 
     <color name="green">#4CAF50</color>

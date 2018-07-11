@@ -6,7 +6,8 @@
     <string name="title_add_task">Add Task</string>
     <string name="title_edit_task">Edit Task</string>
     <string name="title_history">History</string>
-    <string name="title_edit_alarm">Edit Alarm</string>
+    <string name="title_add_alarm">Add</string>
+    <string name="title_edit_alarm">Edit</string>
 
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -37,7 +38,6 @@
     <string name="message_select_task_tip">Select To Dismiss</string>
     <string name="title_activity_main2">Main2Activity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_list_history">History</string>
     <string name="action_edit_history">Edit history</string>

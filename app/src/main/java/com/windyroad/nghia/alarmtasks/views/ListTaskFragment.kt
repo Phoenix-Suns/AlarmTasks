@@ -6,12 +6,15 @@ import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.view.*
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.helper.ItemTouchHelper
 
 import com.windyroad.nghia.alarmtasks.R
 import com.windyroad.nghia.alarmtasks.adapters.TaskAdapter
 import com.windyroad.nghia.alarmtasks.data.TaskData
+import com.windyroad.nghia.alarmtasks.helpers.SwipeHelper
 import com.windyroad.nghia.common.fragment.EditTextDialogFragment
 import com.windyroad.nghia.common.sqlite.DatabaseUtil
+import kotlinx.android.synthetic.main.activity_alarm_screen.*
 
 
 /**
@@ -53,7 +56,29 @@ class ListTaskFragment : Fragment() {
 
     private fun setEvents() {
 
+        // Event
+        mTasksAdapter.listener = object : TaskAdapter.IListener {
 
+            override fun onClick(view: View?, position: Int) {
+                showEditDialog(position, false)
+            }
+
+            override fun onLongClick(view: View?, position: Int): Boolean? {
+
+                //Đang hiện Menu thì ko thực hiện
+                if (mActionMode != null) {
+                    return true
+                }
+
+                // Bắt đầu CAB bằng cách dùng ActionMode.Callback
+                mActionMode = activity?.startActionMode(mActionModeCallback)
+
+                // Chuyển sang chọn Multiple
+                mTasksAdapter.initMultiSelect(mActionMode)
+                mTasksAdapter.toggleSelection(position)
+                return true
+            }
+        }
     }
 
     private fun showEditDialog(position: Int, isAdd: Boolean) {
@@ -86,7 +111,7 @@ class ListTaskFragment : Fragment() {
             }
 
         TaskData.update(activity!!, mListTask)
-        initRecyclerTask()
+        refreshRecyclerTask()
     }
 
 
@@ -121,7 +146,7 @@ class ListTaskFragment : Fragment() {
         if (result == DatabaseUtil.QUERY_FAIL) return
 
         // Refresh List
-        initRecyclerTask()
+        refreshRecyclerTask()
     }
 
     private fun initRecyclerTask() {
@@ -131,32 +156,14 @@ class ListTaskFragment : Fragment() {
         mListTask = TaskData.getAll(activity!!)
         mTasksAdapter = TaskAdapter(activity!!, mListTask)
         mRecyclerTasks.adapter = mTasksAdapter
-
-
-        // Event
-        mTasksAdapter.listener = object : TaskAdapter.IListener {
-
-            override fun onClick(view: View?, position: Int) {
-                showEditDialog(position, false)
-            }
-
-            override fun onLongClick(view: View?, position: Int): Boolean? {
-
-                //Đang hiện Menu thì ko thực hiện
-                if (mActionMode != null) {
-                    return true
-                }
-
-                // Bắt đầu CAB bằng cách dùng ActionMode.Callback
-                mActionMode = activity?.startActionMode(mActionModeCallback)
-
-                // Chuyển sang chọn Multiple
-                mTasksAdapter.initMultiSelect(mActionMode)
-                mTasksAdapter.toggleSelection(position)
-                return true
-            }
-        }
     }
+
+    private fun refreshRecyclerTask() {
+        mListTask = TaskData.getAll(activity!!)
+        mTasksAdapter.setList(mListTask)
+        mTasksAdapter.notifyDataSetChanged()
+    }
+
 
     // Button Click => hiện menu
     private val mActionModeCallback = object : ActionMode.Callback {

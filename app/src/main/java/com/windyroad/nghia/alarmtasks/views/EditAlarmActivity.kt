@@ -41,14 +41,14 @@ class EditAlarmActivity : AppCompatActivity() {
         ThemeHelper.setActivityTheme(this)
         setContentView(R.layout.activity_edit_alarm)
 
-        setEvents()
+
         initVars()
+        setEvents()
     }
 
 
     private fun initVars() {
         setSupportActionBar(toolbar)
-        //supportActionBar?.setTitle(R.string.title_edit_alarm)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp)
 
@@ -56,16 +56,21 @@ class EditAlarmActivity : AppCompatActivity() {
         var id =  intent.extras?.getLong(EXTRA_ALARM_ID, DEFAULT_ALARM_ID)
         if (id == DEFAULT_ALARM_ID || id == null) {
             // Add
+            supportActionBar?.setTitle(R.string.title_add_alarm)
+
             mAlarmDetail = MyAlarm()
 
             val currTime = Calendar.getInstance()
             updateAlarmUI(currTime.get(Calendar.HOUR_OF_DAY), currTime.get(Calendar.MINUTE))
 
             val ringUri = RingtoneManager.getActualDefaultRingtoneUri(applicationContext, RingtoneManager.TYPE_RINGTONE)
+            mAlarmDetail?.alarmTone = ringUri
             textView_ToneSelection.text = RingtoneManager.getRingtone(this, ringUri).getTitle(this)
 
         } else {
             // Update
+            supportActionBar?.setTitle(R.string.title_edit_alarm)
+
             mAlarmDetail = MyAlarmData.getById(baseContext, id!!)
 
             editText_AlarmName.setText(mAlarmDetail.name)

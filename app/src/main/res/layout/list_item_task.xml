@@ -1,22 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/container"
-    android:background="@drawable/selector_row_2">
 
-    <TextView
-        android:id="@+id/textView_Task"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_row_2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_delete">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/Common.spacing_large"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_delete_white_48dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/app_text_medium"
-        style="@style/text_bold"
-        android:text="Test"
-        android:padding="@dimen/list_item_horizon_padding"/>
+        android:background="@drawable/selector_bg_white"
+        android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@drawable/divider"/>
+        <TextView
+            android:id="@+id/textView_Task"
+            style="@style/text_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/list_item_horizon_padding"
+            android:text="Test"
+            android:textSize="@dimen/app_text_medium" />
 
-</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider" />
+
+    </LinearLayout>
+</FrameLayout>

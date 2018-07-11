@@ -80,6 +80,10 @@ class TaskAdapter : RecyclerView.Adapter<TaskAdapter.TaskViewHolder> {
         mActionMode = actionMode
     }
 
+    fun setList(listTask: ArrayList<String>) {
+        mListTask = listTask
+    }
+
 
     inner class TaskViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
 

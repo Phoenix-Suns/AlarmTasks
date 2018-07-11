@@ -40,12 +40,17 @@ class HistoryAdapter : RecyclerView.Adapter<HistoryAdapter.HistoryVH> {
         return mListItem.size
     }
 
+    fun setListHistory(listHistory: ArrayList<History>) {
+        mListItem = listHistory
+    }
+
 
     class HistoryVH(itemView: View?) : RecyclerView.ViewHolder(itemView),
             View.OnClickListener, View.OnLongClickListener {
 
         var itemClickListener : IListener? = null
         var itemLongClickListener : IListener? = null
+        var viewForeground : View? = itemView?.view_foreground
 
         init {
             itemView?.setOnClickListener(this)

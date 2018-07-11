@@ -16,7 +16,9 @@ import com.windyroad.nghia.alarmtasks.helpers.AppConfig
 import com.windyroad.nghia.alarmtasks.models.History
 import com.windyroad.nghia.common.file.CSVFileUtil
 import android.support.v4.content.FileProvider
+import android.support.v7.widget.helper.ItemTouchHelper
 import com.windyroad.nghia.alarmtasks.BuildConfig
+import com.windyroad.nghia.alarmtasks.helpers.SwipeHelper
 import com.windyroad.nghia.alarmtasks.helpers.TimeHelper
 import com.windyroad.nghia.alarmtasks.models.HistoryExport
 import com.windyroad.nghia.common.IntentUtil
@@ -50,20 +52,26 @@ class ListHistoryFragment : Fragment() {
         val rootView = inflater!!.inflate(R.layout.fragment_list_history, container, false)
 
         mRecyclerHistory = rootView.findViewById(R.id.recyclerView_History)
-        refreshHistory()
+        initHistory()
 
         setEvent()
 
         return rootView
     }
 
-    private fun refreshHistory() {
+    private fun initHistory() {
         mListHistory = HistoryData.getAll(activity!!)
 
         mRecyclerHistory.hasFixedSize()
         mRecyclerHistory.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         mHistoryAdapter = HistoryAdapter(mListHistory)
         mRecyclerHistory.adapter = mHistoryAdapter
+    }
+
+    private fun refreshHistory() {
+        mListHistory = HistoryData.getAll(activity!!)
+        mHistoryAdapter.setListHistory(mListHistory)
+        mHistoryAdapter.notifyDataSetChanged()
     }
 
     private fun setEvent() {
@@ -85,6 +93,15 @@ class ListHistoryFragment : Fragment() {
                 yesDialog.show(fragmentManager, "tag")
             }
         }
+
+        // Swipe to delete
+        val itemTouchHelper = SwipeHelper(0, ItemTouchHelper.LEFT, object : SwipeHelper.RecyclerItemTouchHelperListener{
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int, position: Int) {
+                HistoryData.delete(context!!, mListHistory[position].id)
+                refreshHistory()
+            }
+        }, R.id.view_foreground)
+        ItemTouchHelper(itemTouchHelper).attachToRecyclerView(mRecyclerHistory)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
@@ -99,7 +116,7 @@ class ListHistoryFragment : Fragment() {
             }
             R.id.action_clear_history -> {
                 HistoryData.clearAll(activity!!)
-                refreshHistory()
+                initHistory()
             }
         }
         return true
@@ -131,3 +148,4 @@ class ListHistoryFragment : Fragment() {
     }
 
 }
+

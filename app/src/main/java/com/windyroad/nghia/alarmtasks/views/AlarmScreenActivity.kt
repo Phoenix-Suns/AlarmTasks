@@ -23,12 +23,15 @@ import android.os.VibrationEffect
 import android.os.Build
 import android.os.Vibrator
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.helper.ItemTouchHelper
 import android.view.KeyEvent
 import com.windyroad.nghia.alarmtasks.data.MyAlarmData
 import android.view.KeyEvent.KEYCODE_VOLUME_DOWN
 import android.view.KeyEvent.KEYCODE_VOLUME_UP
 import android.view.View
 import com.windyroad.nghia.alarmtasks.adapters.SmallTaskAdapter
+import com.windyroad.nghia.alarmtasks.helpers.SwipeHelper
 
 
 class AlarmScreenActivity : AppCompatActivity() {
@@ -147,32 +150,44 @@ class AlarmScreenActivity : AppCompatActivity() {
             ActivityCompat.finishAffinity(this);
         }
 
-        mTasksAdapter.listener = object : SmallTaskAdapter.IListener {
+        /*mTasksAdapter.listener = object : SmallTaskAdapter.IListener {
             override fun onClick(view: View?, position: Int) {
-                // Save history
-                val history = History(mListTask[position])
-                HistoryData.add(baseContext, history)
-
-                // Check turn off Alarm, not repeat => off
-                var alarm = MyAlarmData.getById(baseContext, mAlarmId!!)
-                if(!alarm.hasRepeat()) {
-                    MyAlarmData.setEnable(baseContext, mAlarmId!!, false)
-                    AlarmHelper.cancelAlarm(baseContext, mAlarmId!!)
-                }
-
-                // Stop Ringtone
-                mMedia?.stop()
-                mVibrator?.cancel()
-
-                //Clear on Stack
-                ActivityCompat.finishAffinity(this@AlarmScreenActivity)
+                handleSelectTaskItem(position)
             }
 
             override fun onLongClick(view: View?, position: Int) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
             }
 
+        }*/
+
+        // Swipe to delete
+        val itemTouchHelper = SwipeHelper(0, ItemTouchHelper.RIGHT, object : SwipeHelper.RecyclerItemTouchHelperListener{
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int, position: Int) {
+                handleSelectTaskItem(position)
+            }
+        }, R.id.container)
+        ItemTouchHelper(itemTouchHelper).attachToRecyclerView(listView_Tasks)
+    }
+
+    private fun handleSelectTaskItem(position: Int) {
+        // Save history
+        val history = History(mListTask[position])
+        HistoryData.add(baseContext, history)
+
+        // Check turn off Alarm, not repeat => off
+        var alarm = MyAlarmData.getById(baseContext, mAlarmId!!)
+        if (!alarm.hasRepeat()) {
+            MyAlarmData.setEnable(baseContext, mAlarmId!!, false)
+            AlarmHelper.cancelAlarm(baseContext, mAlarmId!!)
         }
+
+        // Stop Ringtone
+        mMedia?.stop()
+        mVibrator?.cancel()
+
+        //Clear on Stack
+        ActivityCompat.finishAffinity(this@AlarmScreenActivity)
     }
 
     private fun refreshListView() {
