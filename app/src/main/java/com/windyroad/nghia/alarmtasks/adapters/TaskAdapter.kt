@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.content.Context
 import android.util.SparseBooleanArray
 import android.view.LayoutInflater
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import com.windyroad.nghia.alarmtasks.R
 import kotlinx.android.synthetic.main.list_item_task.view.*
 
@@ -42,7 +44,6 @@ class TaskAdapter : RecyclerView.Adapter<TaskAdapter.TaskViewHolder> {
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         var task = mListTask[position]
         holder.bind(task)
-
 
         // Event
         holder.itemView.setOnClickListener(View.OnClickListener { view ->
@@ -87,9 +88,13 @@ class TaskAdapter : RecyclerView.Adapter<TaskAdapter.TaskViewHolder> {
 
     inner class TaskViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
 
+        var viewForeground: View? = null
+
         fun bind(task: String) {
             itemView.textView_Task.text = task
             itemView.container.isActivated = selectedItems[adapterPosition, false] //Set color selected
+
+            viewForeground = itemView.container
         }
 
     }

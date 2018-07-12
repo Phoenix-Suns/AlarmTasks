@@ -102,9 +102,8 @@ class ListTaskFragment : Fragment() {
 
     private fun deleteTasks() {
         // Xóa, tìm list item còn lại để save
-        val len = mTasksAdapter.selectedItems.size()
         val checked = mTasksAdapter.selectedItems
-        for (i in 0..len)
+        for (i in 0 until mListTask?.size - 1)
             if (checked.get(i)) {
                 mListTask.removeAt(i)
 

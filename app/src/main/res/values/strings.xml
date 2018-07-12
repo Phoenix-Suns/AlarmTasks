@@ -35,7 +35,7 @@
     <string name="message_silent">Silent</string>
     <string name="message_success">Action Success</string>
     <string name="message_fail">Action Fail</string>
-    <string name="message_select_task_tip">Select To Dismiss</string>
+    <string name="message_select_task_tip">SWIPE RIGHT To Dismiss</string>
     <string name="title_activity_main2">Main2Activity</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
