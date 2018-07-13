@@ -66,20 +66,18 @@
         <activity android:name=".views.AlarmScreenActivity"
             android:excludeFromRecents="true"
             android:label=""/>
+
         <activity
             android:name=".helpers.TestActivity"
-            android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar">
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
         </activity>
-        <activity android:name=".helpers.Main2Activity" />
+        <activity android:name=".helpers.Main2Activity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
     </application>
 
 </manifest>
