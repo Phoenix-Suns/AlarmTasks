@@ -28,6 +28,7 @@ class AlarmHelper {
         val EXTRA_HOUR = "extra_timeHour"
         val EXTRA_MINUTE = "extra_timeMinute"
         val EXTRA_TONE = "extra_alarmTone"
+        val EXTRA_VIBRATION = "extra_vibration"
 
         fun setAllAlarm(context: Context) {
             cancelAllAlarm(context)
@@ -147,6 +148,7 @@ class AlarmHelper {
             bundle.putInt(EXTRA_HOUR, model.timeHour)
             bundle.putInt(EXTRA_MINUTE, model.timeMinute)
             bundle.putString(EXTRA_TONE, model.alarmTone.toString())
+            bundle.putBoolean(EXTRA_VIBRATION, model.isEnabled)
             intent.putExtras(bundle)
 
             return PendingIntent.getBroadcast(context, model.id.toInt(), intent, PendingIntent.FLAG_UPDATE_CURRENT)

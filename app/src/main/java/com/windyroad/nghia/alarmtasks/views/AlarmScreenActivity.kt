@@ -67,6 +67,7 @@ class AlarmScreenActivity : AppCompatActivity() {
         val timeHour = intent.extras.getInt(AlarmHelper.EXTRA_HOUR, 0)
         val timeMinute = intent.extras.getInt(AlarmHelper.EXTRA_MINUTE, 0)
         val tone = intent.extras.getString(AlarmHelper.EXTRA_TONE)
+        val vibration = intent.extras.getBoolean(AlarmHelper.EXTRA_VIBRATION)
 
         // Update UI
         textView_Task.text = name
@@ -77,7 +78,8 @@ class AlarmScreenActivity : AppCompatActivity() {
         //--- Play Ringtone---
         playRingtone(tone)
 
-        vibratePhone()
+        if (vibration)
+            vibratePhone()
 
         // --- Sáng màn hình ---
         wakeUpDevice()
@@ -96,7 +98,7 @@ class AlarmScreenActivity : AppCompatActivity() {
                     if (Build.VERSION.SDK_INT >= 21) {
                         val aa = AudioAttributes.Builder()
                                 .setUsage(AudioAttributes.USAGE_ALARM)
-                                .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                //.setContentType(AudioAttributes.CONTENT_TYPE_MUSIC) // todo
                                 .build()
                         mMedia?.setAudioAttributes(aa)
                     } else {

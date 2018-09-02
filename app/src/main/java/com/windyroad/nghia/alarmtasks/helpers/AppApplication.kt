@@ -23,8 +23,8 @@ class AppApplication : Application() {
         if (!AppConfig.getFirstInit(baseContext)) {
             // Fake data
             val ringtoneUri = RingtoneManager.getActualDefaultRingtoneUri(applicationContext, RingtoneManager.TYPE_RINGTONE)
-            val alarm1 = MyAlarm(9, 0, BooleanArray(7), ringtoneUri, "", false)
-            val alarm2 = MyAlarm(10, 0, BooleanArray(7), ringtoneUri, "", false)
+            val alarm1 = MyAlarm(9, 0, BooleanArray(7), ringtoneUri, "", true, false)
+            val alarm2 = MyAlarm(10, 0, BooleanArray(7), ringtoneUri, "", true, false)
             MyAlarmData.add(baseContext, alarm1)
             MyAlarmData.add(baseContext, alarm2)
 

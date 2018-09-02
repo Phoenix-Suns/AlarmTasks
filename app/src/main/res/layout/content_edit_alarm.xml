@@ -137,13 +137,27 @@
 
         <TextView
             android:id="@+id/textView_ToneSelection"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             style="@style/text_bold"
             android:text="@string/action_alarm_tone_default"
             android:textSize="@dimen/app_text_medium"
             android:fontFamily="@font/roboto_bold"
             android:paddingLeft="@dimen/Common.spacing_large"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_vibration_24dp"
+            android:paddingRight="@dimen/Common.spacing_small"/>
+
+        <Switch
+            android:id="@+id/switch_Vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
     </LinearLayout>
 
 

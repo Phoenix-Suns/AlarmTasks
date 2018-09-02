@@ -12,6 +12,7 @@ class MyAlarm : BaseDataObject {
     var repeatingDays: BooleanArray
     var alarmTone: Uri?
     var name: String= ""
+    var isVibration: Boolean = true
     var isEnabled: Boolean = false
 
     constructor() {
@@ -19,14 +20,14 @@ class MyAlarm : BaseDataObject {
         alarmTone = Uri.EMPTY
     }
 
-    constructor(timeHour: Int, timeMinute: Int,
-                repeatingDays: BooleanArray, alarmTone: Uri?,
-                name: String, isEnabled: Boolean) {
+    constructor(timeHour: Int, timeMinute: Int, repeatingDays: BooleanArray, alarmTone: Uri?,
+                name: String, isVibration: Boolean, isEnabled: Boolean) {
         this.timeHour = timeHour
         this.timeMinute = timeMinute
         this.repeatingDays = repeatingDays
         this.alarmTone = alarmTone
         this.name = name
+        this.isVibration = isVibration
         this.isEnabled = isEnabled
     }
 

@@ -23,6 +23,7 @@ class MyAlarmData(context: Context?) : BaseDataHandle(context) {
         val KEY_ALARM_MINUTE = "minute"
         val KEY_ALARM_REPEATE_DAYS = "repeat_days"
         val KEY_ALARM_TONE = "tone"
+        val KEY_ALARM_VIBRATION = "vibration"
         val KEY_ALARM_ENABLED = "enabled"
         // Statement
         val MY_ALARM_CREATE_STATEMENT : String = "CREATE TABLE " + TABLE_ALARM + "( " +
@@ -32,6 +33,7 @@ class MyAlarmData(context: Context?) : BaseDataHandle(context) {
                 KEY_ALARM_MINUTE + " INTEGER, " +
                 KEY_ALARM_REPEATE_DAYS + " TEXT, " +
                 KEY_ALARM_TONE + " TEXT, " +
+                KEY_ALARM_VIBRATION + " BOOLEAN, " +
                 KEY_ALARM_ENABLED + " BOOLEAN " +
                 ")"
 
@@ -45,6 +47,7 @@ class MyAlarmData(context: Context?) : BaseDataHandle(context) {
             values.put(KEY_ALARM_HOUR, model.timeHour)
             values.put(KEY_ALARM_MINUTE, model.timeMinute)
             values.put(KEY_ALARM_TONE, if (model.alarmTone != null) model.alarmTone.toString() else "")
+            values.put(KEY_ALARM_VIBRATION, model.isVibration)
             values.put(KEY_ALARM_ENABLED, model.isEnabled)
 
             var repeatingDays = ""
@@ -67,6 +70,7 @@ class MyAlarmData(context: Context?) : BaseDataHandle(context) {
             model.timeHour = c.getInt(c.getColumnIndex(KEY_ALARM_HOUR))
             model.timeMinute = c.getInt(c.getColumnIndex(KEY_ALARM_MINUTE))
             model.alarmTone = Uri.parse(c.getString(c.getColumnIndex(KEY_ALARM_TONE)))
+            model.isVibration = c.getInt(c.getColumnIndex(KEY_ALARM_VIBRATION)) !== 0
             model.isEnabled = c.getInt(c.getColumnIndex(KEY_ALARM_ENABLED)) !== 0
 
             val repeatingDays = c.getString(c.getColumnIndex(KEY_ALARM_REPEATE_DAYS)).split(",")

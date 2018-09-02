@@ -83,7 +83,7 @@ class EditAlarmActivity : AppCompatActivity() {
             toggle_RepeatSunday.isChecked = mAlarmDetail.getRepeatingDay(MyAlarm.SUNDAY)
 
             textView_ToneSelection.text = RingtoneManager.getRingtone(this, mAlarmDetail!!.alarmTone).getTitle(this)
-
+            switch_Vibration.isChecked = mAlarmDetail.isVibration
 
             updateAlarmUI(mAlarmDetail.timeHour, mAlarmDetail.timeMinute)
         }
@@ -207,8 +207,8 @@ class EditAlarmActivity : AppCompatActivity() {
 
         mAlarmDetail.timeHour = mTime.get(Calendar.HOUR_OF_DAY)
         mAlarmDetail.timeMinute = mTime.get(Calendar.MINUTE)
-
         mAlarmDetail.name = editText_AlarmName.text.toString()
+        mAlarmDetail.isVibration = switch_Vibration.isChecked
 
         mAlarmDetail.setRepeatingDay(MyAlarm.MONDAY, toggle_RepeatMonday.isChecked);
         mAlarmDetail.setRepeatingDay(MyAlarm.TUESDAY, toggle_RepeatTuesday.isChecked);
@@ -217,6 +217,7 @@ class EditAlarmActivity : AppCompatActivity() {
         mAlarmDetail.setRepeatingDay(MyAlarm.FRDIAY, toggle_RepeatFriday.isChecked);
         mAlarmDetail.setRepeatingDay(MyAlarm.SATURDAY, toggle_RepeatSaturday.isChecked);
         mAlarmDetail.setRepeatingDay(MyAlarm.SUNDAY, toggle_RepeatSunday.isChecked)
+
 
         mAlarmDetail.isEnabled = true
     }
