@@ -1,4 +1,4 @@
-package com.windyroad.nghia.alarmtasks.views
+package com.windyroad.nghia.alarmtasks.ui
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -22,7 +22,6 @@ import kotlinx.android.synthetic.main.activity_edit_alarm.*
 import kotlinx.android.synthetic.main.content_edit_alarm.*
 import java.util.*
 import com.windyroad.nghia.alarmtasks.helpers.TimeHelper
-import com.windyroad.nghia.alarmtasks.models.PeriodOfDay
 
 
 class EditAlarmActivity : AppCompatActivity() {

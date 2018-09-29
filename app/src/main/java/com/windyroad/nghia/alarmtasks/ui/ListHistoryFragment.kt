@@ -1,4 +1,4 @@
-package com.windyroad.nghia.alarmtasks.views
+package com.windyroad.nghia.alarmtasks.ui
 
 
 import android.os.Bundle

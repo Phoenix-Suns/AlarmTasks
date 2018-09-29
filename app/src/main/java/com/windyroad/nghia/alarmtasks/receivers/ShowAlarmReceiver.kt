@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import com.windyroad.nghia.alarmtasks.helpers.AlarmHelper
-import com.windyroad.nghia.alarmtasks.views.AlarmScreenActivity
+import com.windyroad.nghia.alarmtasks.ui.AlarmScreenActivity
 
 class ShowAlarmReceiver : BroadcastReceiver() {
 

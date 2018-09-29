@@ -1,4 +1,4 @@
-package com.windyroad.nghia.alarmtasks.views
+package com.windyroad.nghia.alarmtasks.ui
 
 import android.content.Context
 import android.media.AudioManager
@@ -7,7 +7,6 @@ import android.net.Uri
 import android.os.PowerManager.WakeLock
 import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
-import android.widget.*
 import com.windyroad.nghia.alarmtasks.helpers.AlarmHelper
 import com.windyroad.nghia.alarmtasks.R
 import com.windyroad.nghia.alarmtasks.data.HistoryData
@@ -27,9 +26,7 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.view.KeyEvent
 import com.windyroad.nghia.alarmtasks.data.MyAlarmData
-import android.view.KeyEvent.KEYCODE_VOLUME_DOWN
 import android.view.KeyEvent.KEYCODE_VOLUME_UP
-import android.view.View
 import com.windyroad.nghia.alarmtasks.adapters.SmallTaskAdapter
 import com.windyroad.nghia.alarmtasks.helpers.SwipeHelper
 

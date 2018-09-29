@@ -1,4 +1,4 @@
-package com.windyroad.nghia.alarmtasks.views
+package com.windyroad.nghia.alarmtasks.ui
 
 
 import android.os.Bundle
@@ -6,15 +6,12 @@ import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.view.*
 import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.helper.ItemTouchHelper
 
 import com.windyroad.nghia.alarmtasks.R
 import com.windyroad.nghia.alarmtasks.adapters.TaskAdapter
 import com.windyroad.nghia.alarmtasks.data.TaskData
-import com.windyroad.nghia.alarmtasks.helpers.SwipeHelper
 import com.windyroad.nghia.common.fragment.EditTextDialogFragment
 import com.windyroad.nghia.common.sqlite.DatabaseUtil
-import kotlinx.android.synthetic.main.activity_alarm_screen.*
 
 
 /**
