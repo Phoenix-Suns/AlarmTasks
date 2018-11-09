@@ -14,12 +14,12 @@ android:orientation="vertical">
 
     <ImageView
         android:id="@+id/listItem_imageView_Icon"
-        style="@style/Common.listSmallItem_icon"
+        style="@style/common_listSmallItem_icon"
         android:src="@android:drawable/ic_menu_call"/>
 
     <LinearLayout
         android:orientation="vertical"
-        style="@style/Common.listSmallItem_title">
+        style="@style/common_listSmallItem_title">
 
         <TextView
             android:id="@+id/listItem_textView_Title"

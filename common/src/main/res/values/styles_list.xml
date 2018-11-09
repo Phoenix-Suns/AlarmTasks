@@ -4,38 +4,38 @@
 
     <!--list item, title lớn-->
     <!--padding top, bottom mỗi dòng-->
-    <dimen name="Common.listItem_padding">16dp</dimen>
+    <dimen name="common_listItem_padding">16dp</dimen>
     <!--ảnh đầu mỗi dòng-->
-    <dimen name="Common.listItem_icon_size">40dp</dimen><!--Không sử dụng-->
-    <dimen name="Common.listItem_icon_width">72dp</dimen>
-    <dimen name="Common.listItem_icon_paddingLeft">16dp</dimen>
-    <dimen name="Common.listItem_icon_paddingRight">16dp</dimen>
+    <dimen name="common_listItem_icon_size">40dp</dimen><!--Không sử dụng-->
+    <dimen name="common_listItem_icon_width">72dp</dimen>
+    <dimen name="common_listItem_icon_paddingLeft">16dp</dimen>
+    <dimen name="common_listItem_icon_paddingRight">16dp</dimen>
     <!--ảnh thông tin cuối-->
-    <dimen name="Common.listItem_subIcon_size">24dp</dimen><!--Không sử dụng-->
-    <dimen name="Common.listItem_subIcon_width">56dp</dimen>
-    <dimen name="Common.listItem_subIcon_paddingLeft">16dp</dimen>
-    <dimen name="Common.listItem_subIcon_paddingRight">16dp</dimen>
+    <dimen name="common_listItem_subIcon_size">24dp</dimen><!--Không sử dụng-->
+    <dimen name="common_listItem_subIcon_width">56dp</dimen>
+    <dimen name="common_listItem_subIcon_paddingLeft">16dp</dimen>
+    <dimen name="common_listItem_subIcon_paddingRight">16dp</dimen>
 
     <!--list-->
     <!--list content-->
-    <style name="Common.listItem_content">
+    <style name="common_listItem_content">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:paddingTop">@dimen/Common.listItem_padding</item>
-        <item name="android:paddingBottom">@dimen/Common.listItem_padding</item>
+        <item name="android:paddingTop">@dimen/common_listItem_padding</item>
+        <item name="android:paddingBottom">@dimen/common_listItem_padding</item>
     </style>
 
     <!--list icon-->
-    <style name="Common.listItem_icon">
-        <item name="android:layout_width">@dimen/Common.listItem_icon_width</item>
+    <style name="common_listItem_icon">
+        <item name="android:layout_width">@dimen/common_listItem_icon_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">@dimen/Common.listItem_icon_paddingLeft</item>
-        <item name="android:paddingRight">@dimen/Common.listItem_icon_paddingRight</item>
+        <item name="android:paddingLeft">@dimen/common_listItem_icon_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/common_listItem_icon_paddingRight</item>
     </style>
 
     <!--list titmessagetext)-->
-    <style name="Common.listItem_title">
+    <style name="common_listItem_title">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -44,46 +44,46 @@
     </style>
 
     <!--list sub icon (right icon)-->
-    <style name="Common.listItem_subIcon">
-        <item name="android:layout_width">@dimen/Common.listItem_subIcon_width</item>
+    <style name="common_listItem_subIcon">
+        <item name="android:layout_width">@dimen/common_listItem_subIcon_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">@dimen/Common.listItem_subIcon_paddingLeft</item>
-        <item name="android:paddingRight">@dimen/Common.listItem_subIcon_paddingRight</item>
+        <item name="android:paddingLeft">@dimen/common_listItem_subIcon_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/common_listItem_subIcon_paddingRight</item>
     </style>
 
 
     <!--list nhỏ-->
     <!--ảnh đầu mỗi dòng-->
-    <dimen name="Common.listSmallItem_icon_size">24dp</dimen><!--Không sử dụng-->
-    <dimen name="Common.listSmallItem_icon_paddingLeft">16dp</dimen>
-    <dimen name="Common.listSmallItem_icon_paddingRight">32dp</dimen>
+    <dimen name="common_listSmallItem_icon_size">24dp</dimen><!--Không sử dụng-->
+    <dimen name="common_listSmallItem_icon_paddingLeft">16dp</dimen>
+    <dimen name="common_listSmallItem_icon_paddingRight">32dp</dimen>
     <!--ảnh thông tin cuối-->
-    <dimen name="Common.listSmallItem_subIcon_size">16dp</dimen><!--Không sử dụng-->
-    <dimen name="Common.listSmallItem_subIcon_width">40dp</dimen>
-    <dimen name="Common.listSmallItem_subIcon_paddingLeft">8dp</dimen>
-    <dimen name="Common.listSmallItem_subIcon_paddingRight">16dp</dimen>
+    <dimen name="common_listSmallItem_subIcon_size">16dp</dimen><!--Không sử dụng-->
+    <dimen name="common_listSmallItem_subIcon_width">40dp</dimen>
+    <dimen name="common_listSmallItem_subIcon_paddingLeft">8dp</dimen>
+    <dimen name="common_listSmallItem_subIcon_paddingRight">16dp</dimen>
 
     <!--list content-->
-    <style name="Common.listSmallItem_content" parent="Common.listItem_content">
+    <style name="common_listSmallItem_content" parent="common_listItem_content">
 
     </style>
 
     <!--list icon-->
-    <style name="Common.listSmallItem_icon" parent="Common.listItem_icon">
-        <item name="android:paddingLeft">@dimen/Common.listSmallItem_icon_paddingLeft</item>
-        <item name="android:paddingRight">@dimen/Common.listSmallItem_icon_paddingRight</item>
+    <style name="common_listSmallItem_icon" parent="common_listItem_icon">
+        <item name="android:paddingLeft">@dimen/common_listSmallItem_icon_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/common_listSmallItem_icon_paddingRight</item>
     </style>
 
     <!--list titmessagetext)-->
-    <style name="Common.listSmallItem_title" parent="Common.listItem_title">
+    <style name="common_listSmallItem_title" parent="common_listItem_title">
 
     </style>
 
     <!--list sub icon (right icon)-->
-    <style name="Common.listSmallItem_subIcon" parent="Common.listItem_subIcon">
-        <item name="android:layout_width">@dimen/Common.listSmallItem_subIcon_width</item>
-        <item name="android:paddingLeft">@dimen/Common.listSmallItem_subIcon_paddingLeft</item>
-        <item name="android:paddingRight">@dimen/Common.listSmallItem_subIcon_paddingRight</item>
+    <style name="common_listSmallItem_subIcon" parent="common_listItem_subIcon">
+        <item name="android:layout_width">@dimen/common_listSmallItem_subIcon_width</item>
+        <item name="android:paddingLeft">@dimen/common_listSmallItem_subIcon_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/common_listSmallItem_subIcon_paddingRight</item>
     </style>
 
 

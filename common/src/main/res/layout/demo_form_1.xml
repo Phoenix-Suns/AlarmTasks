@@ -32,13 +32,13 @@
                 android:paddingTop="@dimen/activity_vertical_margin">
 
                 <LinearLayout
-                    style="@style/Common.form_content"
+                    style="@style/common_form_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <EditText
-                        style="@style/Common.form_input_clear"
+                        style="@style/common_form_input_clear"
                         android:textSize="@dimen/common_text_display_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/Common.form_content"
+                    style="@style/common_form_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -60,7 +60,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/Common.form_input_clear"
+                        style="@style/common_form_input_clear"
                         android:hint="Location" />
                     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                         style="@style/Common.divider_horizontal"
@@ -69,19 +69,19 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/Common.form_content"
+                    style="@style/common_form_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
-                        style="@style/Common.form_label_clear"
+                        style="@style/common_form_label_clear"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="From" />
 
                     <EditText
-                        style="@style/Common.form_input_clear"
+                        style="@style/common_form_input_clear"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Demo Edit Text" />
@@ -94,13 +94,13 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/Common.form_content"
+                    style="@style/common_form_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
-                        style="@style/Common.form_label"
+                        style="@style/common_form_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="To" />
@@ -113,12 +113,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            style="@style/Common.form_input_clear"
+                            style="@style/common_form_input_clear"
                             android:text="Date"/>
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            style="@style/Common.form_input_clear"
+                            style="@style/common_form_input_clear"
                             android:text="Time"/>
                     </LinearLayout>
 
@@ -130,7 +130,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/Common.form_content"
+                    style="@style/common_form_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -138,7 +138,7 @@
                     <CheckBox
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        style="@style/Common.form_input_clear"
+                        style="@style/common_form_input_clear"
                         android:text="All day"/>
 
                 </LinearLayout>

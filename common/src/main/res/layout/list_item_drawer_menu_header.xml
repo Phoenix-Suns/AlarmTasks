@@ -10,12 +10,12 @@
         android:background="@drawable/selector_background"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/common_spacing_medium"
-        android:paddingLeft="@dimen/Common.listItem_padding"
-        android:paddingRight="@dimen/Common.listItem_padding"
+        android:paddingLeft="@dimen/common_listItem_padding"
+        android:paddingRight="@dimen/common_listItem_padding"
         android:paddingTop="@dimen/common_spacing_medium">
 
     <LinearLayout
-            style="@style/Common.listSmallItem_title"
+            style="@style/common_listSmallItem_title"
             android:orientation="vertical">
 
             <TextView

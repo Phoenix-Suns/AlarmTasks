@@ -21,22 +21,22 @@
             android:text="@string/demo_text"
             style="@style/Common.text_subhead.light"
             android:textColor="@color/common_primary"
-            android:padding="@dimen/Common.listItem_padding"/>
+            android:padding="@dimen/common_listItem_padding"/>
 
     </LinearLayout>
 
     <!--item-->
     <LinearLayout
         android:orientation="horizontal"
-        style="@style/Common.listItem_content">
+        style="@style/common_listItem_content">
 
         <ImageView
-            style="@style/Common.listItem_icon"
+            style="@style/common_listItem_icon"
             android:src="@android:drawable/ic_menu_call"/>
         
         <LinearLayout
             android:orientation="vertical"
-            style="@style/Common.listItem_title">
+            style="@style/common_listItem_title">
             
             <TextView
                 style="@style/Common.text_body.light"
@@ -53,7 +53,7 @@
         </LinearLayout>
         
         <ImageView
-            style="@style/Common.listItem_subIcon"
+            style="@style/common_listItem_subIcon"
             android:src="@android:drawable/ic_btn_speak_now"/>
 
     </LinearLayout>

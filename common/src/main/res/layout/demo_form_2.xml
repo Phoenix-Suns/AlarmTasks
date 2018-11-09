@@ -9,16 +9,16 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            style="@style/Common.form_icon"
+            style="@style/common_form_icon"
             android:src="@android:drawable/ic_input_get" />
 
         <LinearLayout
-            style="@style/Common.form_content"
+            style="@style/common_form_content"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
-                style="@style/Common.form_input_clear"
+                style="@style/common_form_input_clear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Bookmark"/>
@@ -32,11 +32,11 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            style="@style/Common.form_icon"
+            style="@style/common_form_icon"
             android:src="@android:drawable/ic_menu_call" />
 
         <LinearLayout
-            style="@style/Common.form_content"
+            style="@style/common_form_content"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -49,11 +49,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    style="@style/Common.form_input_clear"
+                    style="@style/common_form_input_clear"
                     android:text="Phone number"/>
 
                 <Spinner
-                    style="@style/Common.form_input_clear"
+                    style="@style/common_form_input_clear"
                     android:id="@+id/spinner"
                     android:layout_width="0dp"
                     android:layout_weight="1"

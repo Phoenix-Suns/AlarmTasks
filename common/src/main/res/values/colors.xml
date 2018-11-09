@@ -35,14 +35,34 @@
 
 
     <color name="common_transparent">#00ffffff</color>
+    <color name="common_black">#000000</color>
+    <color name="common_white">#ffffff</color>
+    <color name="common_blue">#007BFF</color>
+    <color name="common_indigo">#6610F2</color>
     <color name="common_green">#4CAF50</color>
     <color name="common_amber">#FFC107</color>
     <color name="common_orange">#FF9800</color>
     <color name="common_red">#F44336</color>
+    <color name="common_pink">#E83E8C</color>
     <color name="common_purple">#9C27B0</color>
     <color name="common_teal">#009688</color>
+    <color name="common_cyan">#17A2B8</color>
     <color name="common_brown">#795548</color>
     <color name="common_blueGrey">#607D8B</color>
+
+    <color name="common_feeling_success">#28A745</color>
+    <color name="common_feeling_danger">#DC3545</color>
+    <color name="common_feeling_warning">#FFC107</color>
+    <color name="common_feeling_info">#17A2B8</color>
+    <color name="common_feeling_light">#F8F9FA</color>
+    <color name="common_feeling_dark">#343A40</color>
+
+    <color name="common_alert_bg_success">#D4EDDA</color>
+    <color name="common_alert_bg_danger">#F8D7DA</color>
+    <color name="common_alert_bg_warning">#FFF3CD</color>
+    <color name="common_alert_bg_info">#D1ECF1</color>
+    <color name="common_alert_bg_light">#FEFEFE</color>
+    <color name="common_alert_bg_dark">#D6D8D9</color>
 
 
 </resources>

@@ -36,7 +36,7 @@
     </style>
 
     <!--App compat Popup Dim-->
-    <style name="Theme.AppCompat.Dialog.Dim" parent="@style/Theme.AppCompat.Dialog">
+    <style name="Common.Dialog.Dim" parent="@style/Theme.AppCompat.Dialog">
         <!--no action bar-->
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
@@ -45,7 +45,7 @@
     </style>
 
     <!--App compat Popup Transparent-->
-    <style name="Theme.AppCompat.Dialog.Transparent" parent="@style/Theme.AppCompat.Dialog">
+    <style name="Common.Dialog.Transparent" parent="@style/Theme.AppCompat.Dialog">
         <!--no action bar-->
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
@@ -57,6 +57,18 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--Top Notification-->
+    <style name="Common.badges">
+        <item name="android:background">@drawable/bg_badges</item>
+        <item name="android:paddingBottom">@dimen/common_spacing_xsmall</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingTop">@dimen/common_spacing_xsmall</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:textSize">@dimen/common_text_overLine</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 
