@@ -11,7 +11,6 @@ import com.windyroad.nghia.alarmtasks.helpers.AlarmHelper
 import com.windyroad.nghia.alarmtasks.helpers.ThemeHelper
 import com.windyroad.nghia.alarmtasks.helpers.TimeHelper
 import com.windyroad.nghia.alarmtasks.models.MyAlarm
-import com.windyroad.nghia.alarmtasks.models.PeriodOfDay
 import kotlinx.android.synthetic.main.list_item_alarm.view.*
 
 /**
@@ -100,14 +99,14 @@ class AlarmAdapter : RecyclerView.Adapter<AlarmAdapter.AlarmViewHolder> {
 
         private fun updateRowUI(item: MyAlarm) {
             if (item.isEnabled) {
-                itemView.textView_Time.setTextColor(ContextCompat.getColor(mContext, R.color.Common_text_primary_light))
+                itemView.textView_Time.setTextColor(ContextCompat.getColor(mContext, R.color.common_textPrimary_light))
 
                 // Cal Time Distance
                 var sbDistance = AlarmHelper.calDistanceTime(mContext, item)
                 itemView.textView_Distance.text = sbDistance.toString()
 
             } else {
-                itemView.textView_Time.setTextColor(ContextCompat.getColor(mContext, R.color.Common_text_hint_disabled_light))
+                itemView.textView_Time.setTextColor(ContextCompat.getColor(mContext, R.color.common_textHint_light))
                 itemView.textView_Distance.text = ""
             }
         }

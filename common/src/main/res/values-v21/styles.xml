@@ -5,15 +5,15 @@
         <item name="windowActionBar">false</item>-->
 
         <!-- Sử dụng API v21 Properties -->
-        <item name="android:colorPrimary">@color/Common.primary</item>
-        <item name="android:colorPrimaryDark">@color/Common.primary</item>
-        <item name="android:windowBackground">@color/Common.background</item>
-        <item name="android:navigationBarColor">@color/Common.navigation_bar</item>
-        <item name="android:colorAccent">@color/Common.accent</item>
+        <item name="android:colorPrimary">@color/common_primary</item>
+        <item name="android:colorPrimaryDark">@color/common_primary</item>
+        <item name="android:windowBackground">@color/common_background</item>
+        <item name="android:navigationBarColor">@color/common_navigationBar</item>
+        <item name="android:colorAccent">@color/common_accent</item>
 
-        <item name="android:colorBackground">@color/Common.background</item>
-        <item name="android:colorForeground">@color/Common.foreground</item>
-        <item name="android:textColorPrimaryInverse">@color/Common.text_primary.dark</item>
+        <item name="android:colorBackground">@color/common_background</item>
+        <item name="android:colorForeground">@color/common_foreground</item>
+        <item name="android:textColorPrimaryInverse">@color/common_textPrimary_dark</item>
         <!-- Status Bar trong suốt, không có height -->
         <!--<item name="android:windowTranslucentStatus">true</item>-->
     </style>

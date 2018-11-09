@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--Màu chữ - Theme Dark-->
-    <color name="Common.text_base.dark">#FFF</color><!--100%-->
+    <color name="common_textBase_dark">#FFF</color><!--100%-->
     <!-- Màu chữ chính-->
-    <color name="Common.text_primary.dark">#FFFFFFFF</color><!--100%-->
+    <color name="common_textPrimary_dark">#FFFFFFFF</color><!--100%-->
     <!-- Màu chữ phụ/ Icon - Không cần nổi bật-->
-    <color name="Common.text_secondary.dark">#B3FFFFFF</color><!--70%-->
+    <color name="common_textSecondary_dark">#B3FFFFFF</color><!--70%-->
     <!--Màu chữ Disable/ Hint-->
-    <color name="Common.text_hint_disabled.dark">#4DFFFFFF</color><!--30%-->
+    <color name="common_textHint_dark">#4DFFFFFF</color><!--30%-->
+    <color name="common_textDisable_dark">#4DFFFFFF</color><!--30%-->
     <!--Màu chữ chia cắt - Phần chia của List Item-->
-    <color name="Common.text_dividers.dark">#1FFFFFFF</color><!--12%-->
+    <color name="common_textDividers_dark">#1FFFFFFF</color><!--12%-->
     <!--Màu Chữ nghịch đảo - dùng cho ColorPrimary là nền-->
-    <color name="Common.text_accent.dark">#000</color>
+    <color name="common_textAccent_dark">#000</color>
 
     <!--Màu chữ - Theme Light-->
-    <color name="Common.text_base.light">#000000</color><!--100%-->
+    <color name="common_textBase_light">#000000</color><!--100%-->
     <!-- Màu chữ chính-->
-    <color name="Common.text_primary.light">#DE000000</color><!--87%-->
+    <color name="common_textPrimary_light">#DE000000</color><!--87%-->
     <!-- Màu chữ phụ/ Icon - Không cần nổi bật-->
-    <color name="Common.text_secondary.light">#8A000000</color><!--54%-->
+    <color name="common_textSecondary_light">#8A000000</color><!--54%-->
     <!--Màu chữ Disable/ Hint-->
-    <color name="Common.text_hint_disabled.light">#61000000</color><!--38%-->
+    <color name="common_textHint_light">#61000000</color><!--38%-->
+    <color name="common_textDisable_light">#61000000</color><!--38%-->
     <!--Màu chữ chia cắt - Phần chia của List Item-->
-    <color name="Common.text_dividers.light">#1F000000</color><!--12%-->
+    <color name="common_textDividers_light">#1F000000</color><!--12%-->
     <!--Màu Chữ nghịch đảo - dùng cho ColorPrimary là nền-->
-    <color name="Common.text_accent.light">#FFF</color>
+    <color name="common_textAccent_light">#FFF</color>
 
 </resources>

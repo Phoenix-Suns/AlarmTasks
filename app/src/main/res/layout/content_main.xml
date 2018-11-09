@@ -18,10 +18,10 @@
         android:fillViewport="false"
         android:textStyle="bold"
         app:tabGravity="fill"
-        app:tabIndicatorColor="@color/Common.text_primary.dark"
+        app:tabIndicatorColor="@color/common_textPrimary_dark"
         app:tabIndicatorHeight="4dp"
-        app:tabSelectedTextColor="@color/Common.text_primary.dark"
-        app:tabTextColor="@color/Common.text_hint_disabled.dark"
+        app:tabSelectedTextColor="@color/common_textPrimary_dark"
+        app:tabTextColor="@color/common_textHint_dark"
         android:elevation="4dp"/>
 
     <android.support.v4.view.ViewPager

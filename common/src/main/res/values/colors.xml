@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!--MÀU CHỮ [00][000000] = [ALPHA][RGB]-->
     <!-- Tham khảo: https://www.google.com/design/spec/style/color.html#color-color-palette -->
 
     <!-- Màu chính (Thường là: 500) -->
-    <color name="Common.primary">#3f51b5</color>
+    <color name="common_primary">#3f51b5</color>
     <!-- Màu tối, thường dùng cho thanh Status (pin, time) -->
     <!-- +200 so với màu chính (Thường là: 700) -->
-    <color name="Common.primary.dark">#303f9f</color>
+    <color name="common_primary_dark">#303f9f</color>
 
     <!-- màu thành điều hướng (Home, back) (900) -->
-    <color name="Common.navigation_bar">#1a237e</color>
+    <color name="common_navigationBar">#1a237e</color>
 
     <!-- màu nhấn (nổi bật), (dùng cho nút) --><!--500: nghịch màu-->
-    <color name="Common.accent">#ff9800</color>
+    <color name="common_accent">#ff9800</color>
     <!--viền nút-->
-    <color name="Common.accent_bright">#80ff9800</color>
+    <color name="common_accent_bright">#80ff9800</color>
 
     <!-- màu nền -->
-    <color name="Common.background">#F9F9F9</color>
+    <color name="common_background">#F9F9F9</color>
 
-    <color name="Common.foreground">#000</color>
+    <color name="common_foreground">#000</color>
 
     <!--Màu background control chọn-->
-    <color name="Common.control_highlight_background">#20000000</color>
+    <color name="common_controlBackground_highLight">#20000000</color>
 
     <!--700: nghịch màu-->
-    <color name="Common.control_activated">#f57c00</color>
+    <color name="common_control_activated">#f57c00</color>
     <!--Control rỗng, chưa có dữ liệu-->
-    <color name="Common.control_none">#EEE</color>
+    <color name="common_control_none">#EEE</color>
 
     <!--màu dải phân cách, chia ra-->
-    <color name="Common.dividers">#e4e4e4</color>
+    <color name="common_dividers">#e4e4e4</color>
 
 
-    <color name="Common.transparent">#00ffffff</color>
-    <color name="Common.green">#4CAF50</color>
-    <color name="Common.amber">#FFC107</color>
-    <color name="Common.orange">#FF9800</color>
-    <color name="Common.red">#F44336</color>
-    <color name="Common.purple">#9C27B0</color>
-    <color name="Common.teal">#009688</color>
-    <color name="Common.brown">#795548</color>
-    <color name="Common.blue_grey">#607D8B</color>
+    <color name="common_transparent">#00ffffff</color>
+    <color name="common_green">#4CAF50</color>
+    <color name="common_amber">#FFC107</color>
+    <color name="common_orange">#FF9800</color>
+    <color name="common_red">#F44336</color>
+    <color name="common_purple">#9C27B0</color>
+    <color name="common_teal">#009688</color>
+    <color name="common_brown">#795548</color>
+    <color name="common_blueGrey">#607D8B</color>
 
 
 </resources>

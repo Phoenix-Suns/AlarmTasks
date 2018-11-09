@@ -3,31 +3,31 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="Common.spacing_xsmall">2dp</dimen>
-    <dimen name="Common.spacing_small">4dp</dimen>
-    <dimen name="Common.spacing_medium">8dp</dimen>
-    <dimen name="Common.spacing_large">16dp</dimen>
-    <dimen name="Common.spacing_xlarge">32dp</dimen>
-    <dimen name="Common.spacing_xxlarge">72dp</dimen>
+    <dimen name="common_spacing_xsmall">2dp</dimen>
+    <dimen name="common_spacing_small">4dp</dimen>
+    <dimen name="common_spacing_medium">8dp</dimen>
+    <dimen name="common_spacing_large">16dp</dimen>
+    <dimen name="common_spacing_xlarge">32dp</dimen>
+    <dimen name="common_spacing_xxlarge">72dp</dimen>
 
-    <dimen name="Common.status_bar_height">24px</dimen>
+    <dimen name="common_statusBar_height">24px</dimen>
 
     <dimen name="common_toolbar_height">56dp</dimen>
     <dimen name="common_toolbar_paddingTop">0px</dimen>
 
-    <dimen name="Common.nav_drawer_width">260dp</dimen>
-    <dimen name="Common.nav_drawer_paddingRight">56dp</dimen>
+    <dimen name="common_navDrawer_width">260dp</dimen>
+    <dimen name="common_navDrawer_paddingRight">56dp</dimen>
 
     <!--Độ cao (Elevation) của FAB-->
-    <dimen name="Common.elevation_low">9dp</dimen>
-    <dimen name="Common.elevation_high">12dp</dimen>
+    <dimen name="common_elevation_low">9dp</dimen>
+    <dimen name="common_elevation_high">12dp</dimen>
 
-    <dimen name="Common.fab_compat_margin">0dp</dimen>
+    <dimen name="common_fab_margin">0dp</dimen>
 
     <!--Khoảng cách giữa 2 List-->
-    <dimen name="Common.space_content_area_height">8dp</dimen>
+    <dimen name="common_spaceContentArea_height">8dp</dimen>
 
     <!--tiêu đề nhỏ phía trên-->
-    <dimen name="Common.subtitle_height">48dp</dimen>
+    <dimen name="common_subtitle_height">48dp</dimen>
 
 </resources>

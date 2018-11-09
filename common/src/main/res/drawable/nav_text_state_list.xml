@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Đổi chữ trên Navigation View-->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/Common.text_secondary.dark" />
-    <item android:color="@color/Common.text_primary.dark" android:state_checked="true" />
+    <item android:color="@color/common_textSecondary_dark" />
+    <item android:color="@color/common_textPrimary_dark" android:state_checked="true" />
 </selector>

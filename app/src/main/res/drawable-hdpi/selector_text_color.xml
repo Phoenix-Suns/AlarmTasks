@@ -3,7 +3,7 @@
 <!--Tab header Selector-->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/Common.text_secondary.dark" android:state_pressed="false" android:state_selected="false" />
-    <item android:color="@color/Common.text_primary.dark" android:state_pressed="false" android:state_selected="true" />
-    <item android:color="@color/Common.text_primary.dark" android:state_pressed="true" />
+    <item android:color="@color/common_textSecondary_dark" android:state_pressed="false" android:state_selected="false" />
+    <item android:color="@color/common_textPrimary_dark" android:state_pressed="false" android:state_selected="true" />
+    <item android:color="@color/common_textPrimary_dark" android:state_pressed="true" />
 </selector>

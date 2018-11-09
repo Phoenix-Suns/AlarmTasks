@@ -3,7 +3,7 @@
 
     <!--Nút in hoa, in đậm, phẳng-->
     <style name="Common.button" parent="Base.Widget.AppCompat.Button">
-        <item name="android:textColor">@color/Common.text_primary.light</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
     </style>
@@ -20,8 +20,8 @@
         <item name="android:gravity">start|fill_vertical</item>
         <item name="android:paddingTop">@dimen/Common.form_paddingTop</item>
         <item name="android:paddingBottom">@dimen/Common.form_paddingBottom</item>
-        <item name="android:paddingRight">@dimen/Common.spacing_large</item>
-        <item name="android:paddingLeft">@dimen/Common.spacing_large</item>
+        <item name="android:paddingRight">@dimen/common_spacing_large</item>
+        <item name="android:paddingLeft">@dimen/common_spacing_large</item>
 
         <item name="android:textAlignment">viewStart</item>
     </style>

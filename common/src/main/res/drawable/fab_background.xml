@@ -19,13 +19,13 @@
     <item android:state_pressed="true">
         <shape
             android:shape="oval">
-            <solid android:color="@color/Common.accent_bright"/>
+            <solid android:color="@color/common_accent_bright"/>
         </shape>
     </item>
     <item>
         <shape
             android:shape="oval">
-            <solid android:color="@color/Common.accent"/>
+            <solid android:color="@color/common_accent"/>
 
         </shape>
     </item>

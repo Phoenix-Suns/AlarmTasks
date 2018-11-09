@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.windyroad.nghia.common.fragment.EditTextDialogFragment"
     android:orientation="vertical"
-    android:paddingHorizontal="@dimen/Common.spacing_large"
+    android:paddingHorizontal="@dimen/common_spacing_large"
     android:id="@+id/edit_name">
 
     <TextView android:id="@+id/lbl_your_name"

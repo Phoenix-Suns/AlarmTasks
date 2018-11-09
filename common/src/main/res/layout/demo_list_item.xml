@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="@string/demo_text"
             style="@style/Common.text_subhead.light"
-            android:textColor="@color/Common.primary"
+            android:textColor="@color/common_primary"
             android:padding="@dimen/Common.listItem_padding"/>
 
     </LinearLayout>

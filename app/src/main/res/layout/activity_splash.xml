@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/Common.spacing_large"
+        android:padding="@dimen/common_spacing_large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:text="@string/message_reason_ask_permission"
             style="@style/Common.text_body.light"
-            android:layout_marginTop="@dimen/Common.spacing_medium"
+            android:layout_marginTop="@dimen/common_spacing_medium"
             app:layout_constraintTop_toBottomOf="@+id/textView_Title"/>
 
         <Button
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/action_grant_permission"
-            android:layout_marginTop="@dimen/Common.spacing_large"
+            android:layout_marginTop="@dimen/common_spacing_large"
             app:layout_constraintTop_toBottomOf="@id/textView_Message"
             app:layout_constraintRight_toRightOf="parent"/>
 

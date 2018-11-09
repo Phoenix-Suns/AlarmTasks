@@ -6,8 +6,8 @@ android:orientation="vertical">
 
 <LinearLayout
     android:background="@drawable/selector_background"
-    android:paddingTop="@dimen/Common.spacing_medium"
-    android:paddingBottom="@dimen/Common.spacing_medium"
+    android:paddingTop="@dimen/common_spacing_medium"
+    android:paddingBottom="@dimen/common_spacing_medium"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">

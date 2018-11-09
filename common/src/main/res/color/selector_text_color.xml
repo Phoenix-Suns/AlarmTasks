@@ -3,16 +3,16 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!--normal-->
-    <item android:state_enabled="true" android:color="@color/Common.text_primary.light"  />
+    <item android:state_enabled="true" android:color="@color/common_textPrimary_light"  />
 
     <!--enable-->
-    <item android:state_enabled="false" android:color="@color/Common.control_highlight_background"/>
+    <item android:state_enabled="false" android:color="@color/common_controlBackground_highLight"/>
 
     <!--active-->
-    <item android:state_focused="true" android:color="@color/Common.accent"/>
-    <item android:state_pressed="true" android:color="@color/Common.accent"/>
-    <item android:state_selected="true" android:color="@color/Common.accent"/>
-    <item android:state_hovered="true" android:color="@color/Common.accent"/>
-    <item android:state_activated="true" android:color="@color/Common.accent"/>
+    <item android:state_focused="true" android:color="@color/common_accent"/>
+    <item android:state_pressed="true" android:color="@color/common_accent"/>
+    <item android:state_selected="true" android:color="@color/common_accent"/>
+    <item android:state_hovered="true" android:color="@color/common_accent"/>
+    <item android:state_activated="true" android:color="@color/common_accent"/>
 
 </selector>

@@ -9,10 +9,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/selector_background"
         android:orientation="horizontal"
-        android:paddingBottom="@dimen/Common.spacing_medium"
+        android:paddingBottom="@dimen/common_spacing_medium"
         android:paddingLeft="@dimen/Common.listItem_padding"
         android:paddingRight="@dimen/Common.listItem_padding"
-        android:paddingTop="@dimen/Common.spacing_medium">
+        android:paddingTop="@dimen/common_spacing_medium">
 
     <LinearLayout
             style="@style/Common.listSmallItem_title"

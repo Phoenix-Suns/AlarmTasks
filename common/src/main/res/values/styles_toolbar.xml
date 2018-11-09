@@ -3,9 +3,9 @@
     <!-- ToolBar -->
     <style name="common_toolbar" parent="">
         <!--màu chữ title-->
-        <item name="android:textColorPrimary">@color/Common.text_accent.light</item>
+        <item name="android:textColorPrimary">@color/common_textAccent_light</item>
         <!-- màu Menu Icon -->
-        <item name="android:textColorSecondary">@color/Common.text_accent.light</item>
+        <item name="android:textColorSecondary">@color/common_textAccent_light</item>
 
         <!-- Support library compatibility -->
         <item name="android:background">?attr/colorPrimary</item>

@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
-        android:background="@color/Common.transparent"
+        android:background="@color/common_transparent"
         app:elevation="0dp">
 
         <android.support.v7.widget.Toolbar

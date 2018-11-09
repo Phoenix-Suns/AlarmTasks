@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
         <shape>
-            <solid android:color="@color/Common.control_highlight_background" />
+            <solid android:color="@color/common_controlBackground_highLight" />
         </shape>
     </item>
 

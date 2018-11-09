@@ -18,7 +18,7 @@
             android:layout_height="32dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/Common.spacing_large"
+            android:layout_marginEnd="@dimen/common_spacing_large"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/ic_delete_white_48dp" />
 
@@ -69,8 +69,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/roboto_thin"
-                android:paddingBottom="@dimen/Common.spacing_small"
-                android:paddingLeft="@dimen/Common.spacing_large"
+                android:paddingBottom="@dimen/common_spacing_small"
+                android:paddingLeft="@dimen/common_spacing_large"
                 android:textColor="@color/app_text_hint_disabled.light"
                 app:layout_constraintBottom_toBottomOf="@id/textView_Time"
                 app:layout_constraintLeft_toRightOf="@id/textView_Time"
@@ -80,7 +80,7 @@
                 android:id="@+id/textView_Task"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:paddingLeft="@dimen/Common.spacing_large"
+                android:paddingLeft="@dimen/common_spacing_large"
                 android:text="Title"
                 app:layout_constraintBottom_toTopOf="@+id/textView_Distance"
                 app:layout_constraintLeft_toRightOf="@id/textView_Time"

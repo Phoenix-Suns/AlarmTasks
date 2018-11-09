@@ -13,7 +13,7 @@
         android:id="@+id/textView"
         android:textColor="@drawable/selector_text_color"
         android:gravity="center"
-        android:paddingTop="@dimen/Common.spacing_medium"
+        android:paddingTop="@dimen/common_spacing_medium"
         android:textSize="@dimen/app_text_medium"/>
 
 </LinearLayout>

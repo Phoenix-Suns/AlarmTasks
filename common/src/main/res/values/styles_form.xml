@@ -36,8 +36,8 @@
     <!--dùng cho label của Input Clear-->
     <style name="Common.form_label_clear">
         <item name="android:paddingTop">@dimen/Common.form_paddingTop</item>
-        <item name="android:textSize">@dimen/Common.text_caption</item>
-        <item name="android:textColor">@color/Common.text_hint_disabled.light</item>
+        <item name="android:textSize">@dimen/common_text_caption</item>
+        <item name="android:textColor">@color/common_textHint_light</item>
     </style>
 
     <!--dùng cho mọi input-->
@@ -61,7 +61,7 @@
     </style>
     <style name="Common.form_input_clear.dark" parent="Common.form_input_clear">
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textColorHint">@color/Common.text_hint_disabled.dark</item>
+        <item name="android:textColorHint">@color/common_textHint_dark</item>
     </style>
     <!--Icon bên phải-->
     <style name="Common.form_sub_icon">

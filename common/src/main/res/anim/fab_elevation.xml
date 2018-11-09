@@ -21,16 +21,16 @@
         <objectAnimator
             android:propertyName="translationZ"
             android:duration="@android:integer/config_shortAnimTime"
-            android:valueFrom="@dimen/Common.elevation_low"
-            android:valueTo="@dimen/Common.elevation_high"
+            android:valueFrom="@dimen/common_elevation_low"
+            android:valueTo="@dimen/common_elevation_high"
             android:valueType="floatType"/>
     </item>
     <item>
         <objectAnimator
             android:propertyName="translationZ"
             android:duration="@android:integer/config_shortAnimTime"
-            android:valueFrom="@dimen/Common.elevation_high"
-            android:valueTo="@dimen/Common.elevation_low"
+            android:valueFrom="@dimen/common_elevation_high"
+            android:valueTo="@dimen/common_elevation_low"
             android:valueType="floatType"/>
     </item>
 </selector>

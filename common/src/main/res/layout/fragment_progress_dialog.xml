@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="@dimen/Common.spacing_medium"
+    android:padding="@dimen/common_spacing_medium"
     android:layout_gravity="center_horizontal">
 
     <RelativeLayout
@@ -17,15 +17,15 @@
             style="@style/Widget.AppCompat.ProgressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/Common.spacing_large"/>
+            android:paddingTop="@dimen/common_spacing_large"/>
 
         <TextView
             android:id="@+id/textView_Message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/Common.spacing_large"
+            android:paddingTop="@dimen/common_spacing_large"
             style="@style/TextAppearance.AppCompat.Body1"
-            android:paddingStart="@dimen/Common.spacing_large"
+            android:paddingStart="@dimen/common_spacing_large"
             android:text="Loading..."
             android:layout_toEndOf="@+id/progressBar"/>
 
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView_Message"
             android:layout_toEndOf="@+id/progressBar"
-            android:paddingStart="@dimen/Common.spacing_large"
+            android:paddingStart="@dimen/common_spacing_large"
             android:text="20%"/>
 
         <TextView

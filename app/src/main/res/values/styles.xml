@@ -68,7 +68,7 @@
         <item name="android:minHeight">0dp</item>
         <item name="android:background">@null</item>
         <item name="android:textColor">@color/selector_text_repeat_day_black</item>
-        <item name="android:paddingRight">@dimen/Common.spacing_medium</item>
+        <item name="android:paddingRight">@dimen/common_spacing_medium</item>
         <item name="android:clickable">false</item>
     </style>
     <!--#endregion-->
@@ -84,7 +84,7 @@
         <item name="android:fontFamily">@font/roboto_bold</item>
         <item name="android:textColor">@color/selector_text_repeat_day_white</item>
         <item name="android:textSize">@dimen/app_text_medium</item>
-        <item name="android:padding">@dimen/Common.spacing_medium</item>
+        <item name="android:padding">@dimen/common_spacing_medium</item>
     </style>
 
     <style name="text_bold">

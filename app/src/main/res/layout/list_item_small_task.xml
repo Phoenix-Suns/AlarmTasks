@@ -17,7 +17,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_centerVertical="true"
-            android:layout_marginStart="@dimen/Common.spacing_large"
+            android:layout_marginStart="@dimen/common_spacing_large"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/ic_check_white_24dp" />
 

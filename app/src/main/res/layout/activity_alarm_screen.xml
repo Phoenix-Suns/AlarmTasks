@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dismiss"
-        android:textColor="@color/Common.text_primary.dark"
+        android:textColor="@color/common_textPrimary_dark"
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@+id/textView_Time" />
 
@@ -61,10 +61,10 @@
         android:id="@+id/textView_Tip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/Common.spacing_medium"
+        android:layout_marginBottom="@dimen/common_spacing_medium"
         android:text="@string/message_select_task_tip"
         android:textAlignment="center"
-        android:textColor="@color/Common.text_secondary.light"
+        android:textColor="@color/common_textSecondary_light"
         app:layout_constraintBottom_toTopOf="@id/listView_Tasks" />
 
     <android.support.v7.widget.RecyclerView
