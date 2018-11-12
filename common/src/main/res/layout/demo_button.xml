@@ -9,10 +9,14 @@
         android:id="@+id/buttonAwesome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Awesome Button"
+        android:text="Custom AppCompat Button"
         android:textColor="@color/common_white"
         app:backgroundTint="@color/common_accent"/>
 
-
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Button"
+        style="@style/Common.MenuButton"/>
 
 </LinearLayout>

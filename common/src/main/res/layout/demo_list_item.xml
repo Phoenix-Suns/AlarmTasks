@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            style="@style/Common.divider_horizontal"/>
+            style="@style/Common.DividerHorizontal"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -28,15 +28,15 @@
     <!--item-->
     <LinearLayout
         android:orientation="horizontal"
-        style="@style/common_listItem_content">
+        style="@style/Common.ListItemContent">
 
         <ImageView
-            style="@style/common_listItem_icon"
+            style="@style/Common.ListItemIcon"
             android:src="@android:drawable/ic_menu_call"/>
         
         <LinearLayout
             android:orientation="vertical"
-            style="@style/common_listItem_title">
+            style="@style/Common.ListItemTitle">
             
             <TextView
                 style="@style/Common.text_body.light"
@@ -53,7 +53,7 @@
         </LinearLayout>
         
         <ImageView
-            style="@style/common_listItem_subIcon"
+            style="@style/Common.ListItemSubIcon"
             android:src="@android:drawable/ic_btn_speak_now"/>
 
     </LinearLayout>

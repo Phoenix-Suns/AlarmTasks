@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- ================ DARK THEME ==================== -->
     <!--Chữ lớn, khẩu hiệu, gây chú ý mạnh-->
     <!--Header xxxx large-->
     <style name="Common.text_display_4">
@@ -71,7 +72,7 @@
     </style>
 
 
-    <!--region light theme-->
+    <!--region =============== LIGHT THEME =============== -->
     <!--Header xxxx large-->
     <style name="Common.text_display_4.light" parent="Common.text_display_4">
         <item name="android:textColor">@color/common_textSecondary_light</item>
@@ -127,5 +128,139 @@
         <item name="android:textColor">@color/common_textPrimary_light</item>
     </style>
     <!--endregion-->
+
+
+    <!-- ============== 2018 LIGHT THEME ================= -->
+    <style name="Common.Text">
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="Common.Text.H1" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_h1</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Common.Text.H2" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_h2</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Common.Text.H3" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_h3</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Common.Text.H4" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_h4</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Common.Text.H5" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_h5</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Common.Text.H6" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_h6</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="Common.Text.Subtitle1" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_subtitle_1</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Common.Text.Subtitle2" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_subtitle_2</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="Common.Text.Body1" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_body_1</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Common.Text.Body2" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_body_2</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="Common.Text.Button" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_button</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Common.Text.Caption" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_caption</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Common.Text.OverLine" parent="Common.Text">
+        <item name="android:textSize">@dimen/common_text_overLine</item>
+        <item name="android:textColor">@color/common_textPrimary_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    
+    
+    
+    <!-- ============== 2018 DARK THEME ================= -->
+    <style name="Common.Text.H1.Dark" parent="Common.Text.H1">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+    <style name="Common.Text.H2.Dark" parent="Common.Text.H2">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+    <style name="Common.Text.H3.Dark" parent="Common.Text.H3">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+    <style name="Common.Text.H4.Dark" parent="Common.Text.H4">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+    <style name="Common.Text.H5.Dark" parent="Common.Text.H5">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+    <style name="Common.Text.H6.Dark" parent="Common.Text.H6">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="Common.Text.Subtitle1.Dark" parent="Common.Text.Subtitle1">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+    <style name="Common.Text.Subtitle2.Dark" parent="Common.Text.Subtitle2">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+
+
+    <style name="Common.Text.Body1.Dark" parent="Common.Text.Body1">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+    <style name="Common.Text.Body2.Dark" parent="Common.Text.Body2">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+
+
+    <style name="Common.Text.Button.Dark" parent="Common.Text.Button">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+
+    <style name="Common.Text.Caption.Dark" parent="Common.Text.Caption">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+
+    <style name="Common.Text.OverLine.Dark" parent="Common.Text.OverLine">
+        <item name="android:textColor">@color/common_textPrimary_dark</item>
+    </style>
+
 
 </resources>

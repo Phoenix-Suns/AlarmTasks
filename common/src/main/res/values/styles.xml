@@ -1,21 +1,13 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="Common" parent="Common.theme.base">
-
-    </style>
-    <style name="Common.theme" parent="Common">
-
-    </style>
-
-    <style name="Common.theme.base" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Common.Theme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <!--font mặc định-->
         <item name="android:typeface">serif</item>
         <!--Apply All TextView-->
         <item name="android:textViewStyle">@style/Common.text_body.light</item>
         <!--<item name="android:buttonStyle">@style/Common.button</item>-->
         <!--<item name="actionBarTabTextStyle"></item>-->
-        <item name="android:actionBarStyle">@style/common_toolbar</item>
+        <item name="android:actionBarStyle">@style/Common.Toolbar</item>
 
         <!--<item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>-->
@@ -28,12 +20,23 @@
         <item name="colorControlHighlight">@color/common_controlBackground_highLight</item>
     </style>
 
+
+    <!-- Base application theme. -->
+    <style name="Common" parent="Common.Theme.Base">
+
+    </style>
+    <style name="Common.Theme" parent="Common">
+
+    </style>
+
+
     <!--đường cách ngang-->
-    <style name="Common.divider_horizontal">
+    <style name="Common.DividerHorizontal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:background">@color/common_textDividers_light</item>
     </style>
+
 
     <!--App compat Popup Dim-->
     <style name="Common.Dialog.Dim" parent="@style/Theme.AppCompat.Dialog">
@@ -43,6 +46,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
 
     <!--App compat Popup Transparent-->
     <style name="Common.Dialog.Transparent" parent="@style/Theme.AppCompat.Dialog">
@@ -59,8 +63,9 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
+
     <!--Top Notification-->
-    <style name="Common.badges">
+    <style name="Common.Badges">
         <item name="android:background">@drawable/bg_badges</item>
         <item name="android:paddingBottom">@dimen/common_spacing_xsmall</item>
         <item name="android:paddingLeft">6dp</item>
@@ -71,5 +76,41 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+
+    <!-- Menu Context -->
+    <style name="Common.PopupMenu" parent="Widget.AppCompat.Light.PopupMenu">
+        <!--màu chữ-->
+        <item name="android:textColorPrimary">@color/common_textPrimary_light</item>
+        <!-- màu Menu Icon -->
+        <item name="android:textColorSecondary">@color/common_textSecondary_light</item>
+
+        <item name="android:background">@color/common_background</item>
+    </style>
+
+
+    <!-- ToolBar -->
+    <style name="Common.Toolbar">
+        <!--màu chữ title-->
+        <item name="android:textColorPrimary">@color/common_textAccent_light</item>
+        <!-- màu Menu Icon -->
+        <item name="android:textColorSecondary">@color/common_textAccent_light</item>
+
+        <!-- Support library compatibility -->
+        <item name="android:background">?attr/colorPrimary</item>
+        <!--<item name="backgroundStacked"></item>
+        <item name="backgroundSplit"></item>-->
+    </style>
+
+
+    <!-- Floating Action Button -->
+    <style name="Common.Fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/common_fab_margin</item>
+        <!--<item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>-->
+    </style>
 
 </resources>

@@ -15,7 +15,7 @@
         android:paddingTop="@dimen/common_spacing_medium">
 
     <LinearLayout
-            style="@style/common_listSmallItem_title"
+            style="@style/Common.ListSmallItemTitle"
             android:orientation="vertical">
 
             <TextView

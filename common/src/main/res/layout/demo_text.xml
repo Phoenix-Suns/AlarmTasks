@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/Common.Text.H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h1" />
+
+        <TextView
+            style="@style/Common.Text.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h2" />
+
+        <TextView
+            style="@style/Common.Text.H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h3" />
+
+        <TextView
+            style="@style/Common.Text.H4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h4" />
+
+        <TextView
+            style="@style/Common.Text.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h5" />
+
+        <TextView
+            style="@style/Common.Text.H6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h6" />
+
+        <TextView
+            style="@style/Common.Text.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="subtitle 1" />
+
+        <TextView
+            style="@style/Common.Text.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="subtitle 2" />
+
+        <TextView
+            style="@style/Common.Text.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="body 1" />
+
+        <TextView
+            style="@style/Common.Text.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="body 2" />
+
+        <TextView
+            style="@style/Common.Text.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button" />
+
+        <TextView
+            style="@style/Common.Text.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caption" />
+
+        <TextView
+            style="@style/Common.Text.OverLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Over Line" />
+
+    </LinearLayout>
+
+</ScrollView>

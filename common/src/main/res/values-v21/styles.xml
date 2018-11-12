@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Common.theme" parent="Common.theme.base">
+    <style name="Common.Theme" parent="Common.Theme.Base">
         <!--<item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>-->
 

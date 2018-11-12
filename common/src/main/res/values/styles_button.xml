@@ -2,14 +2,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--Nút in hoa, in đậm, phẳng-->
-    <style name="Common.button" parent="Base.Widget.AppCompat.Button">
+    <style name="Common.Button" parent="Base.Widget.AppCompat.Button">
         <item name="android:textColor">@color/common_textPrimary_light</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
     <!--Menu Button-->
-    <style name="Common.menu_button">
+    <style name="Common.MenuButton">
         <item name="android:drawablePadding">@dimen/common_listSmallItem_icon_paddingRight</item>
 
         <item name="android:textViewStyle">@style/Common.text_caption.light</item>

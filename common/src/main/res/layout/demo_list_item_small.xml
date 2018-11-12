@@ -6,15 +6,15 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        style="@style/common_listSmallItem_content">
+        style="@style/Common.ListSmallItemContent">
 
         <ImageView
-            style="@style/common_listSmallItem_icon"
+            style="@style/Common.ListSmallItemIcon"
             android:src="@android:drawable/ic_menu_call"/>
 
         <LinearLayout
             android:orientation="vertical"
-            style="@style/common_listSmallItem_title">
+            style="@style/Common.ListSmallItemTitle">
 
             <TextView
                 style="@style/Common.text_body.light"
@@ -25,7 +25,7 @@
         </LinearLayout>
 
         <ImageView
-            style="@style/common_listSmallItem_subIcon"
+            style="@style/Common.ListSmallItemSubIcon"
             android:src="@android:drawable/ic_btn_speak_now"/>
 
     </LinearLayout>

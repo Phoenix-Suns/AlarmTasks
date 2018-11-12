@@ -11,14 +11,15 @@
     <dimen name="common_form_icon_marginRight">36dp</dimen>
 
 
-    <!--Title + Input Type-->
-    <!--Dùng cho nhóm Input - Gồm cả Title+Input-->
-    <style name="common_form_content">
+    <!-- Title + Input Type -->
+    <!-- Group Input - Gồm cả Title+Input -->
+    <style name="Common.FormContent">
         <item name="android:paddingBottom">@dimen/common_form_paddingBottom</item>
     </style>
 
-    <!--Icon + Input Form-->
-    <style name="common_form_icon">
+
+    <!-- Left Icon (+ Input Form) -->
+    <style name="Common.FormIcon">
         <item name="android:layout_width">@dimen/common_form_icon_size</item>
         <item name="android:layout_height">@dimen/common_form_icon_size</item>
         <item name="android:layout_marginTop">@dimen/common_form_paddingTop</item>
@@ -27,44 +28,43 @@
     </style>
 
 
-    <!--Dùng cho label của Input-->
-    <style name="common_form_label" parent="common_form_label_clear">
-        <item name="android:paddingLeft">4dp</item>
-        <item name="android:paddingRight">4dp</item>
-    </style>
-
-    <!--dùng cho label của Input Clear-->
-    <style name="common_form_label_clear">
+    <!-- Form Label -->
+    <style name="Common.FormLabel">
         <item name="android:paddingTop">@dimen/common_form_paddingTop</item>
         <item name="android:textSize">@dimen/common_text_caption</item>
         <item name="android:textColor">@color/common_textHint_light</item>
     </style>
 
-    <!--dùng cho mọi input-->
-    <style name="common_form_input_clear">
+
+    <!-- Form Input -->
+    <style name="Common.FormInput">
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/selector_text_color</item>
         <item name="android:background">@drawable/selector_background</item>
         <item name="android:gravity">start|fill_vertical</item>
         <item name="android:minHeight">0dp</item>
+    </style>
+    <style name="Common.FormInput.Clear" parent="Common.FormInput">
         <item name="android:paddingLeft">0dp</item>
         <item name="android:paddingRight">0dp</item>
         <item name="android:paddingTop">@dimen/common_form_paddingTop</item>
         <item name="android:paddingBottom">@dimen/common_form_paddingBottom</item>
     </style>
-    <style name="common_form_input_clear.text_right" parent="common_form_input_clear">
+    <style name="Common.FormInput.Clear.text_right" parent="Common.FormInput.Clear">
         <item name="android:textAlignment">viewEnd</item>
     </style>
-    <style name="common_form_input_clear.text_left" parent="common_form_input_clear">
+    <style name="Common.FormInput.Clear.text_left" parent="Common.FormInput.Clear">
         <item name="android:textAlignment">viewStart</item>
     </style>
-    <style name="common_form_input_clear.dark" parent="common_form_input_clear">
+    <style name="Common.FormInput.Clear.dark" parent="Common.FormInput.Clear">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textColorHint">@color/common_textHint_dark</item>
     </style>
-    <!--Icon bên phải-->
-    <style name="common_form_sub_icon">
+
+
+    <!-- Right Icon -->
+    <style name="Common.FormSubIcon">
         <item name="android:layout_marginRight">@dimen/common_form_padding_horizontal</item>
         <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">@dimen/common_form_padding_horizontal</item>
         <item name="android:layout_gravity">center</item>

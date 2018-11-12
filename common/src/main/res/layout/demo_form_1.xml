@@ -18,7 +18,7 @@
                 android:layout_height="wrap_content" />
 
             <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/Common.divider_horizontal"
+                style="@style/Common.DividerHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="1dp" />
 
@@ -32,27 +32,27 @@
                 android:paddingTop="@dimen/activity_vertical_margin">
 
                 <LinearLayout
-                    style="@style/common_form_content"
+                    style="@style/Common.FormContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <EditText
-                        style="@style/common_form_input_clear"
+                        style="@style/Common.FormInput.Clear"
                         android:textSize="@dimen/common_text_display_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Event" />
 
                     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-                        style="@style/Common.divider_horizontal"
+                        style="@style/Common.DividerHorizontal"
                         android:layout_width="match_parent"
                         android:layout_height="1dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/common_form_content"
+                    style="@style/Common.FormContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -60,47 +60,47 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/common_form_input_clear"
+                        style="@style/Common.FormInput.Clear"
                         android:hint="Location" />
                     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-                        style="@style/Common.divider_horizontal"
+                        style="@style/Common.DividerHorizontal"
                         android:layout_width="match_parent"
                         android:layout_height="1dp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/common_form_content"
+                    style="@style/Common.FormContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
-                        style="@style/common_form_label_clear"
+                        style="@style/Common.FormLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="From" />
 
                     <EditText
-                        style="@style/common_form_input_clear"
+                        style="@style/Common.FormInput.Clear"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Demo Edit Text" />
 
                     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-                        style="@style/Common.divider_horizontal"
+                        style="@style/Common.DividerHorizontal"
                         android:layout_width="match_parent"
                         android:layout_height="1dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/common_form_content"
+                    style="@style/Common.FormContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
-                        style="@style/common_form_label"
+                        style="@style/Common.FormLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="To" />
@@ -113,24 +113,24 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            style="@style/common_form_input_clear"
+                            style="@style/Common.FormInput.Clear"
                             android:text="Date"/>
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            style="@style/common_form_input_clear"
+                            style="@style/Common.FormInput.Clear"
                             android:text="Time"/>
                     </LinearLayout>
 
                     <TextView
-                        style="@style/Common.divider_horizontal"
+                        style="@style/Common.DividerHorizontal"
                         android:layout_width="match_parent"
                         android:layout_height="1dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/common_form_content"
+                    style="@style/Common.FormContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -138,7 +138,7 @@
                     <CheckBox
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        style="@style/common_form_input_clear"
+                        style="@style/Common.FormInput.Clear"
                         android:text="All day"/>
 
                 </LinearLayout>

@@ -31,8 +31,8 @@
     <dimen name="common_text_h5">24sp</dimen>
     <dimen name="common_text_h6">20sp</dimen>
 
-    <dimen name="common_subtitle_1">16sp</dimen>
-    <dimen name="common_subtitle_2">14sp</dimen>
+    <dimen name="common_text_subtitle_1">16sp</dimen>
+    <dimen name="common_text_subtitle_2">14sp</dimen>
 
     <!--Chữ chính-->
     <dimen name="common_text_body_1">16sp</dimen>

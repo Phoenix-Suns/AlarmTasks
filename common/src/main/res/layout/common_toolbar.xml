@@ -8,7 +8,7 @@
     android:layout_height="?attr/actionBarSize"
     android:background="?attr/colorPrimary"
     android:minHeight="?attr/actionBarSize"
-    android:theme="@style/common_toolbar">
+    android:theme="@style/Common.Toolbar">
     <!--app:layout_scrollFlags="scroll|enterAlways"
     app:popupTheme="@style/Common.popupMenu"-->
 

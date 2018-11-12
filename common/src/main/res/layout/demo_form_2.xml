@@ -9,20 +9,20 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            style="@style/common_form_icon"
+            style="@style/Common.FormIcon"
             android:src="@android:drawable/ic_input_get" />
 
         <LinearLayout
-            style="@style/common_form_content"
+            style="@style/Common.FormContent"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
-                style="@style/common_form_input_clear"
+                style="@style/Common.FormInput.Clear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Bookmark"/>
-            <TextView style="@style/Common.divider_horizontal"/>
+            <TextView style="@style/Common.DividerHorizontal"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -32,11 +32,11 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            style="@style/common_form_icon"
+            style="@style/Common.FormIcon"
             android:src="@android:drawable/ic_menu_call" />
 
         <LinearLayout
-            style="@style/common_form_content"
+            style="@style/Common.FormContent"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -49,18 +49,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    style="@style/common_form_input_clear"
+                    style="@style/Common.FormInput.Clear"
                     android:text="Phone number"/>
 
                 <Spinner
-                    style="@style/common_form_input_clear"
+                    style="@style/Common.FormInput.Clear"
                     android:id="@+id/spinner"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
-            <TextView style="@style/Common.divider_horizontal"/>
+            <TextView style="@style/Common.DividerHorizontal"/>
         </LinearLayout>
     </LinearLayout>
 
