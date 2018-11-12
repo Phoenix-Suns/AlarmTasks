@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.CompoundButton;
+import android.widget.LinearLayout;
 
 import com.windyroad.nghia.alarmtasks.R;
 
@@ -29,9 +31,11 @@ public class Main2Activity extends AppCompatActivity {
 
         View button = findViewById(R.id.button);
 
+
         // Animation
         Animation anim = AnimationUtils.loadAnimation(Main2Activity.this, R.anim.slide_left);
         button.startAnimation(anim);
+
     }
 
 
