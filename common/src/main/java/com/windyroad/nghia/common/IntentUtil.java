@@ -136,4 +136,12 @@ public class IntentUtil {
         i.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
         return i;
     }
+
+    public static void shareText(Context context, String title, String subject, String text) {
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, text);
+        context.startActivity(Intent.createChooser(sharingIntent, title));
+    }
 }
