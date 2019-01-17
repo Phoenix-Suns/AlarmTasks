@@ -1,5 +1,6 @@
 package com.windyroad.nghia.alarmtasks.ui
 
+import android.animation.ArgbEvaluator
 import android.os.Bundle
 import android.support.design.widget.AppBarLayout
 import android.support.v7.app.AppCompatActivity
@@ -17,10 +18,20 @@ import android.content.Intent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.IntentFilter
+import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import com.windyroad.nghia.alarmtasks.helpers.ThemeHelper
 import com.windyroad.nghia.alarmtasks.helpers.TimeHelper
 import com.windyroad.nghia.alarmtasks.models.PeriodOfDay
 import java.util.*
+import android.animation.ObjectAnimator
+import android.graphics.Color
+import android.os.Build
+import android.util.Log
+import android.view.View
+import android.widget.TextView
+import com.windyroad.nghia.common.AnimationUtil
+import kotlinx.android.synthetic.main.content_main.*
 
 
 class MainActivity : AppCompatActivity(), BasePresenter.BaseView {
@@ -85,8 +96,6 @@ class MainActivity : AppCompatActivity(), BasePresenter.BaseView {
             }
         })
     }
-
-
 
 
     //region Hỗ trợ

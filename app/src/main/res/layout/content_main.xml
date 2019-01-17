@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.windyroad.nghia.alarmtasks.ui.MainActivity"
@@ -20,9 +22,13 @@
         app:tabGravity="fill"
         app:tabIndicatorColor="@color/common_textPrimary_dark"
         app:tabIndicatorHeight="4dp"
+        app:tabPaddingBottom="-1dp"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+        app:tabPaddingTop="-1dp"
         app:tabSelectedTextColor="@color/common_textPrimary_dark"
-        app:tabTextColor="@color/common_textHint_dark"
-        android:elevation="4dp"/>
+        app:tabTextColor="@color/common_textHint_dark" />
+
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager_Main"
