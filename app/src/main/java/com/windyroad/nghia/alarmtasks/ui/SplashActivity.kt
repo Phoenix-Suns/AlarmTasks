@@ -13,6 +13,8 @@ import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
 
+    // test
+
     var permissions = arrayOf(
             Manifest.permission.VIBRATE,
         Manifest.permission.WAKE_LOCK,
