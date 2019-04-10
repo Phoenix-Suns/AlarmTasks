@@ -29,7 +29,9 @@ import android.graphics.Color
 import android.os.Build
 import android.util.Log
 import android.view.View
+import android.widget.TabHost
 import android.widget.TextView
+import android.widget.Toast
 import com.windyroad.nghia.common.AnimationUtil
 import kotlinx.android.synthetic.main.content_main.*
 

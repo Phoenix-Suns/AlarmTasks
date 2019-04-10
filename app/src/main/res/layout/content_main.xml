@@ -22,10 +22,6 @@
         app:tabGravity="fill"
         app:tabIndicatorColor="@color/common_textPrimary_dark"
         app:tabIndicatorHeight="4dp"
-        app:tabPaddingBottom="-1dp"
-        app:tabPaddingEnd="-1dp"
-        app:tabPaddingStart="-1dp"
-        app:tabPaddingTop="-1dp"
         app:tabSelectedTextColor="@color/common_textPrimary_dark"
         app:tabTextColor="@color/common_textHint_dark" />
 
