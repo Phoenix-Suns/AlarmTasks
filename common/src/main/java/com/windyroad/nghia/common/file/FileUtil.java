@@ -2,6 +2,7 @@ package com.windyroad.nghia.common.file;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.net.Uri;
 import android.support.annotation.Nullable;
 
@@ -209,6 +210,19 @@ public class FileUtil {
             // add file
             resultFiles.add(sourceFile);
         }
+    }
+
+
+    public static String loadJSONFromAsset(Context context, String jsonFileName) throws IOException {
+        AssetManager manager = context.getAssets();
+        InputStream is = manager.open(jsonFileName);
+
+        int size = is.available();
+        byte[] buffer = new byte[size];
+        is.read(buffer);
+        is.close();
+
+        return new String(buffer, "UTF-8");
     }
 
 }

@@ -1,5 +1,6 @@
 package com.windyroad.nghia.common;
 
+import android.content.res.Resources;
 import android.support.annotation.Nullable;
 
 import java.io.BufferedReader;
@@ -173,10 +174,14 @@ public class ConvertUtil {
     }
 
 
-    /** USING: dp => px (set padding, marrgin)
-     * _context.getResources().getDisplayMetrics().density;*/
-    public static int dp2px(float _scale, int _dpValue) {
-        return (int) (_dpValue * _scale + 0.5f);
+    public static int dpToPx(float dp) {
+        float density = Resources.getSystem().getDisplayMetrics().density;
+        return Math.round(dp * density);
+    }
+
+    public static float pxToDp(float px) {
+        float densityDpi = Resources.getSystem().getDisplayMetrics().densityDpi;
+        return px / (densityDpi / 160f);
     }
 
     public static int object2Int(Object _objectValue, int _defautValue) {
