@@ -1,5 +1,8 @@
 package com.windyroad.nghia.common
 
+import java.text.SimpleDateFormat
+import java.util.*
+
 object MathUtil {
     /**
      * Trả về Num2 tương đương Num1
@@ -31,4 +34,16 @@ object MathUtil {
         return Triple(start, end, newPos)
     }
 
+    /**
+     * Tạo mã kiểu String, mã Hex theo thời gian thực
+     * (kiểu: yyyyMMddHHmmssSSS(3 số) ngẫu nhiên) => Hex */
+    fun getCodeGenerationByTime(): String {
+        val dateFormat = SimpleDateFormat("yyyyMMddHHmmssSSS", Locale.getDefault())
+        val longId = java.lang.Long.valueOf(dateFormat.format(Date()))
+        val strId = java.lang.Long.toHexString(longId)
+
+        val rand = Random().nextInt(999).toString() + ""
+
+        return strId + rand
+    }
 }
