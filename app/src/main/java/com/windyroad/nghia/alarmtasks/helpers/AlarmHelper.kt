@@ -167,21 +167,43 @@ class AlarmHelper {
             val nowDay = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
             val nowHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
             val nowMinute = Calendar.getInstance().get(Calendar.MINUTE)
-            var timeSet = false  // had Set Time
 
-            if (!alarm.hasRepeat()){
-                // Không có lặp ngày nào -> Báo thức theo giờ
-                calendar.set(Calendar.DAY_OF_WEEK, nowDay)
+            val alarmHour = alarm.timeHour
+            val alarmMinute = alarm.timeMinute
 
-                if ((alarm.timeHour > nowHour) or (alarm.timeHour == nowHour && alarm.timeMinute > nowMinute)) {
-                    // Chưa tới thời gian (giờ phút) => hẹn giờ
+
+            if (alarm.hasRepeat()){
+
+                var hadSetTime = false
+
+                for (dayOfWeek in Calendar.SUNDAY..Calendar.SATURDAY) {
+                    //#region === Đã qua thời gian Hẹn giờ ===
+                    if (alarm.isRepeatingDayFromCalendar(dayOfWeek)
+                            && nowDay <= dayOfWeek
+                            && !(dayOfWeek == nowDay && alarmHour < nowHour)
+                            && !(dayOfWeek == nowDay && alarmHour == nowHour && alarmMinute <= nowMinute)) {
+                        //Hôm nay đã qua ngày lặp
+                        //Hôm nay là ngày lặp, Giờ phút đã qua
+
+                        calendar.set(Calendar.DAY_OF_WEEK, dayOfWeek)
+                        hadSetTime = true
+                        break
+                    }
+                    //#endregion
                 }
-                else {
-                    // Qua thời gian Báo thức - Báo thức ngày mai
-                    calendar.add(Calendar.DATE, 1)
-                }
 
-                timeSet = true
+                if (!hadSetTime) {
+                    for (dayOfWeek in Calendar.SUNDAY..Calendar.SATURDAY) {
+                        //#region === Chưa đến Ngày lặp -> Trả về Tuần này, năm Sau (add year) ===
+                        if (alarm.isRepeatingDayFromCalendar(dayOfWeek)
+                                && nowDay >= dayOfWeek) {
+                            calendar.set(Calendar.DAY_OF_WEEK, dayOfWeek)
+                            calendar.add(Calendar.WEEK_OF_YEAR, 1)
+                            break
+                        }
+                        //#endregion
+                    }
+                }
             }
             /*
             if ((alarm.timeHour > nowHour) or (alarm.timeHour == nowHour && alarm.timeMinute > nowMinute)) {
@@ -192,35 +214,17 @@ class AlarmHelper {
 
             }*/
             else {
-                // Hẹn giờ theo Repeat
+                //#region === Không có lặp ngày nào -> Báo thức theo giờ ===
+                calendar.set(Calendar.DAY_OF_WEEK, nowDay)
 
-                // Thời gian hiện tại đã qua thời gian Hẹn giờ
-                // Chạy hết ngày trong tuần
-                for (dayOfWeek in Calendar.SUNDAY..Calendar.SATURDAY) {
-                    if (alarm.getRepeatingDay(dayOfWeek - 1)
-                            && nowDay <= dayOfWeek
-                            && !(dayOfWeek == nowDay && alarm.timeHour < nowHour)
-                            && !(dayOfWeek == nowDay && alarm.timeHour == nowHour && alarm.timeMinute <= nowMinute)) {
-                        //lấy ngày lặp + Hôm nay đã qua ngày lặp +
-                        //Không: Hôm nay là ngày lặp + Giờ phút đã qua
-
-                        calendar.set(Calendar.DAY_OF_WEEK, dayOfWeek)
-                        timeSet = true
-                        break
-                    }
+                if ((alarmHour > nowHour) or (alarmHour == nowHour && alarmMinute > nowMinute)) {
+                    // Chưa tới thời gian báo thức => trả về calendar mặc định
                 }
-            }
-
-            if (!timeSet) {
-                for (dayOfWeek in Calendar.SUNDAY..Calendar.SATURDAY) {
-                    if (alarm.getRepeatingDay(dayOfWeek - 1) && nowDay >= dayOfWeek) {
-                        //lấy ngày lặp + Hôm nay chưa đến ngày lặp
-
-                        calendar.set(Calendar.DAY_OF_WEEK, dayOfWeek)
-                        calendar.add(Calendar.WEEK_OF_YEAR, 1)
-                        break
-                    }
+                else {
+                    // Đã qua thời gian Báo thức - Báo thức ngày mai (thêm 1 ngày)
+                    calendar.add(Calendar.DATE, 1)
                 }
+                //#endregion
             }
 
             return calendar

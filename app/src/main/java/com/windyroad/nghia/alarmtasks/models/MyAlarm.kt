@@ -1,6 +1,7 @@
 package com.windyroad.nghia.alarmtasks.models
 
 import android.net.Uri
+import java.util.*
 
 /**
  * Created by Nghia on 2/15/2018.
@@ -36,8 +37,13 @@ class MyAlarm : BaseDataObject {
         repeatingDays[dayOfWeek] = value
     }
 
-    fun getRepeatingDay(dayOfWeek: Int): Boolean {
+    fun isRepeatingDay(dayOfWeek: Int): Boolean {
         return repeatingDays[dayOfWeek]
+    }
+
+    fun isRepeatingDayFromCalendar(calendarDayOfWeek: Int): Boolean {
+        val dayOfWeek = dayOfWeekFromCalendar(calendarDayOfWeek)
+        return isRepeatingDay(dayOfWeek)
     }
 
     fun hasRepeat(): Boolean {
@@ -55,8 +61,18 @@ class MyAlarm : BaseDataObject {
         val TUESDAY = 2
         val WEDNESDAY = 3
         val THURSDAY = 4
-        val FRDIAY = 5
+        val FRIDAY = 5
         val SATURDAY = 6
 
+        fun dayOfWeekFromCalendar(calendarDayOfWeek: Int): Int = when(calendarDayOfWeek) {
+            Calendar.SUNDAY -> SUNDAY
+            Calendar.MONDAY -> MONDAY
+            Calendar.TUESDAY -> TUESDAY
+            Calendar.WEDNESDAY -> WEDNESDAY
+            Calendar.THURSDAY -> THURSDAY
+            Calendar.FRIDAY -> FRIDAY
+            Calendar.SATURDAY -> SATURDAY
+            else -> SUNDAY
+        }
     }
 }

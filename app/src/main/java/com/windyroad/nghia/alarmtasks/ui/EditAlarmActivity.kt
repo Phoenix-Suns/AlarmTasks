@@ -73,13 +73,13 @@ class EditAlarmActivity : AppCompatActivity() {
             mAlarmDetail = MyAlarmData.getById(baseContext, id!!)
 
             editText_AlarmName.setText(mAlarmDetail.name)
-            toggle_RepeatMonday.isChecked = mAlarmDetail.getRepeatingDay(MyAlarm.MONDAY)
-            toggle_RepeatTuesday.isChecked = mAlarmDetail.getRepeatingDay(MyAlarm.TUESDAY)
-            toggle_RepeatWednesday.isChecked = mAlarmDetail.getRepeatingDay(MyAlarm.WEDNESDAY)
-            toggle_RepeatThursday.isChecked = mAlarmDetail.getRepeatingDay(MyAlarm.THURSDAY)
-            toggle_RepeatFriday.isChecked = mAlarmDetail.getRepeatingDay(MyAlarm.FRDIAY)
-            toggle_RepeatSaturday.isChecked = mAlarmDetail.getRepeatingDay(MyAlarm.SATURDAY)
-            toggle_RepeatSunday.isChecked = mAlarmDetail.getRepeatingDay(MyAlarm.SUNDAY)
+            toggle_RepeatMonday.isChecked = mAlarmDetail.isRepeatingDay(MyAlarm.MONDAY)
+            toggle_RepeatTuesday.isChecked = mAlarmDetail.isRepeatingDay(MyAlarm.TUESDAY)
+            toggle_RepeatWednesday.isChecked = mAlarmDetail.isRepeatingDay(MyAlarm.WEDNESDAY)
+            toggle_RepeatThursday.isChecked = mAlarmDetail.isRepeatingDay(MyAlarm.THURSDAY)
+            toggle_RepeatFriday.isChecked = mAlarmDetail.isRepeatingDay(MyAlarm.FRIDAY)
+            toggle_RepeatSaturday.isChecked = mAlarmDetail.isRepeatingDay(MyAlarm.SATURDAY)
+            toggle_RepeatSunday.isChecked = mAlarmDetail.isRepeatingDay(MyAlarm.SUNDAY)
 
             textView_ToneSelection.text = RingtoneManager.getRingtone(this, mAlarmDetail!!.alarmTone).getTitle(this)
             switch_Vibration.isChecked = mAlarmDetail.isVibration
@@ -213,7 +213,7 @@ class EditAlarmActivity : AppCompatActivity() {
         mAlarmDetail.setRepeatingDay(MyAlarm.TUESDAY, toggle_RepeatTuesday.isChecked);
         mAlarmDetail.setRepeatingDay(MyAlarm.WEDNESDAY, toggle_RepeatWednesday.isChecked);
         mAlarmDetail.setRepeatingDay(MyAlarm.THURSDAY, toggle_RepeatThursday.isChecked);
-        mAlarmDetail.setRepeatingDay(MyAlarm.FRDIAY, toggle_RepeatFriday.isChecked);
+        mAlarmDetail.setRepeatingDay(MyAlarm.FRIDAY, toggle_RepeatFriday.isChecked);
         mAlarmDetail.setRepeatingDay(MyAlarm.SATURDAY, toggle_RepeatSaturday.isChecked);
         mAlarmDetail.setRepeatingDay(MyAlarm.SUNDAY, toggle_RepeatSunday.isChecked)
 

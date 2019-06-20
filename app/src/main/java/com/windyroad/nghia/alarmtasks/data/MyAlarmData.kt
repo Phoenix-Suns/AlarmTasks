@@ -52,7 +52,7 @@ class MyAlarmData(context: Context?) : BaseDataHandle(context) {
 
             var repeatingDays = ""
             for (i in 0..6) {
-                repeatingDays += model.getRepeatingDay(i).toString() + ","
+                repeatingDays += model.isRepeatingDay(i).toString() + ","
             }
             repeatingDays = repeatingDays.dropLast(1)
             values.put(KEY_ALARM_REPEATE_DAYS, repeatingDays)

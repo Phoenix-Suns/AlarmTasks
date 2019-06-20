@@ -69,13 +69,13 @@ class AlarmAdapter : RecyclerView.Adapter<AlarmAdapter.AlarmViewHolder> {
             itemView.textView_Time.text = TimeHelper.makeTime(item.timeHour, item.timeMinute)
             itemView.switch_Enable.isChecked = item.isEnabled
 
-            itemView.toggle_RepeatMonday.isChecked = item.getRepeatingDay(MyAlarm.MONDAY)
-            itemView.toggle_RepeatTuesday.isChecked = item.getRepeatingDay(MyAlarm.TUESDAY)
-            itemView.toggle_RepeatWednesday.isChecked = item.getRepeatingDay(MyAlarm.WEDNESDAY)
-            itemView.toggle_RepeatThursday.isChecked = item.getRepeatingDay(MyAlarm.THURSDAY)
-            itemView.toggle_RepeatFriday.isChecked = item.getRepeatingDay(MyAlarm.FRDIAY)
-            itemView.toggle_RepeatSaturday.isChecked = item.getRepeatingDay(MyAlarm.SATURDAY)
-            itemView.toggle_RepeatSunday.isChecked = item.getRepeatingDay(MyAlarm.SUNDAY)
+            itemView.toggle_RepeatMonday.isChecked = item.isRepeatingDay(MyAlarm.MONDAY)
+            itemView.toggle_RepeatTuesday.isChecked = item.isRepeatingDay(MyAlarm.TUESDAY)
+            itemView.toggle_RepeatWednesday.isChecked = item.isRepeatingDay(MyAlarm.WEDNESDAY)
+            itemView.toggle_RepeatThursday.isChecked = item.isRepeatingDay(MyAlarm.THURSDAY)
+            itemView.toggle_RepeatFriday.isChecked = item.isRepeatingDay(MyAlarm.FRIDAY)
+            itemView.toggle_RepeatSaturday.isChecked = item.isRepeatingDay(MyAlarm.SATURDAY)
+            itemView.toggle_RepeatSunday.isChecked = item.isRepeatingDay(MyAlarm.SUNDAY)
 
             // Day Period Background
             itemView.imageView_Period.setImageResource(ThemeHelper.getImageDrawable(item.timeHour))
